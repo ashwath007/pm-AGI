@@ -40,7 +40,7 @@ PM-AGI measures LLM performance across four critical dimensions of performance m
 ## Quick Start
 
 ```bash
-git clone https://github.com/hawky-ai/pm-agi-benchmark
+git clone https://github.com/Hawky-ai/pm-AGI
 cd pm-agi-benchmark
 pip install -r requirements.txt
 ```
@@ -134,7 +134,7 @@ We welcome contributions to the benchmark dataset! See [CONTRIBUTING.md](CONTRIB
   title={PM-AGI: A Performance Marketing Benchmark for Large Language Models},
   author={hawky.ai},
   year={2025},
-  url={https://github.com/hawky-ai/pm-agi-benchmark}
+  url={https://github.com/Hawky-ai/pm-AGI}
 }
 ```
 

@@ -58,7 +58,7 @@ print(ds["test"][0])
 ## Evaluate a Model
 
 ```bash
-git clone https://github.com/hawky-ai/pm-agi-benchmark
+git clone https://github.com/Hawky-ai/pm-AGI
 cd pm-agi-benchmark
 pip install -r requirements.txt
 python evaluate.py --model gpt-4o --provider openai --api-key YOUR_KEY
@@ -81,4 +81,4 @@ python evaluate.py --model gpt-4o --provider openai --api-key YOUR_KEY
 
 ## License
 
-MIT — see [LICENSE](https://github.com/hawky-ai/pm-agi-benchmark/blob/main/LICENSE)
+MIT — see [LICENSE](https://github.com/Hawky-ai/pm-AGI/blob/main/LICENSE)

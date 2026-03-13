@@ -119,8 +119,8 @@ DESCRIPTION = """
 Developed by [hawky.ai](https://hawky.ai) — evaluating how well LLMs reason, plan, and act in real-world **Meta Ads** and **Google Ads** scenarios.
 
 📦 [Dataset on Hugging Face](https://huggingface.co/datasets/hawky-ai/pm-agi-benchmark) &nbsp;|&nbsp;
-💻 [GitHub](https://github.com/hawky-ai/pm-agi-benchmark) &nbsp;|&nbsp;
-📖 [How to Submit](https://github.com/hawky-ai/pm-agi-benchmark#submitting-results-to-the-leaderboard)
+💻 [GitHub](https://github.com/Hawky-ai/pm-AGI) &nbsp;|&nbsp;
+📖 [How to Submit](https://github.com/Hawky-ai/pm-AGI#submitting-results-to-the-leaderboard)
 """
 
 SUBMIT_GUIDE = """
@@ -128,7 +128,7 @@ SUBMIT_GUIDE = """
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/hawky-ai/pm-agi-benchmark
+git clone https://github.com/Hawky-ai/pm-AGI
 cd pm-agi-benchmark
 pip install -r requirements.txt
 ```
@@ -273,7 +273,7 @@ def create_app():
         <div style="text-align:center; padding: 16px; color: #94a3b8; font-size: 0.85em;">
             PM-AGI Benchmark by <a href="https://hawky.ai" target="_blank">hawky.ai</a> &nbsp;|&nbsp;
             MIT License &nbsp;|&nbsp;
-            <a href="https://github.com/hawky-ai/pm-agi-benchmark" target="_blank">GitHub</a>
+            <a href="https://github.com/Hawky-ai/pm-AGI" target="_blank">GitHub</a>
         </div>
         """)
 
