@@ -1,0 +1,46 @@
+{
+  "benchmark": "PM-AGI Benchmark v1.0.0",
+  "model": "gpt-4o",
+  "provider": "openai",
+  "evaluated_at": "2025-06-01T12:00:00Z",
+  "total_questions": 100,
+  "overall_score": 0.821,
+  "overall_percentage": "82.1%",
+  "category_scores": {
+    "meta_ads": {
+      "score": 0.847,
+      "count": 30,
+      "percentage": "84.7%"
+    },
+    "google_ads": {
+      "score": 0.833,
+      "count": 30,
+      "percentage": "83.3%"
+    },
+    "critical_thinking": {
+      "score": 0.790,
+      "count": 20,
+      "percentage": "79.0%"
+    },
+    "action_based": {
+      "score": 0.795,
+      "count": 20,
+      "percentage": "79.5%"
+    }
+  },
+  "difficulty_scores": {
+    "easy": {
+      "score": 0.920,
+      "percentage": "92.0%"
+    },
+    "medium": {
+      "score": 0.830,
+      "percentage": "83.0%"
+    },
+    "hard": {
+      "score": 0.730,
+      "percentage": "73.0%"
+    }
+  },
+  "note": "This is a placeholder/example result. Run evaluate.py to generate real results."
+}

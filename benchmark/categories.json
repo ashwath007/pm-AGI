@@ -1,0 +1,70 @@
+{
+  "categories": [
+    {
+      "id": "meta_ads",
+      "label": "Meta Ads",
+      "description": "Facebook and Instagram advertising — campaign structure, audience targeting, bidding strategies, creative performance, and measurement.",
+      "subcategories": [
+        "campaign_structure",
+        "audience_targeting",
+        "bidding_strategy",
+        "creative_performance",
+        "measurement",
+        "advantage_plus"
+      ],
+      "question_count": 30,
+      "color": "#1877F2"
+    },
+    {
+      "id": "google_ads",
+      "label": "Google Ads",
+      "description": "Google Search, Shopping, Display, and Performance Max — Smart Bidding, Quality Score, keyword strategy, and attribution.",
+      "subcategories": [
+        "campaign_structure",
+        "keyword_strategy",
+        "quality_score",
+        "smart_bidding",
+        "performance_max",
+        "search_campaigns",
+        "attribution"
+      ],
+      "question_count": 30,
+      "color": "#4285F4"
+    },
+    {
+      "id": "critical_thinking",
+      "label": "Critical Thinking",
+      "description": "Data interpretation, budget allocation, competitive analysis, and strategic reasoning about performance marketing scenarios.",
+      "subcategories": [
+        "data_interpretation",
+        "budget_allocation",
+        "competitive_analysis"
+      ],
+      "question_count": 20,
+      "color": "#F59E0B"
+    },
+    {
+      "id": "action_based",
+      "label": "Action-Based",
+      "description": "Real-world scenarios requiring specific, actionable recommendations — campaign optimization, troubleshooting, scaling, and reporting.",
+      "subcategories": [
+        "campaign_optimization",
+        "troubleshooting",
+        "scaling_decisions",
+        "reporting_insights"
+      ],
+      "question_count": 20,
+      "color": "#EF4444"
+    }
+  ],
+  "difficulty_levels": {
+    "easy": "Foundational concepts and definitions",
+    "medium": "Applied knowledge and platform mechanics",
+    "hard": "Complex scenarios, trade-offs, and expert-level decision making"
+  },
+  "question_types": {
+    "mcq": "Multiple choice with a single correct answer — scored 1.0 or 0.0",
+    "open_ended": "Free-form answer evaluated by LLM judge against rubric — scored 0.0 to 1.0",
+    "action_based": "Scenario-based question expecting specific recommended actions — scored 0.0 to 1.0 by LLM judge"
+  }
+}

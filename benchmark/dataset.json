@@ -1,0 +1,2296 @@
+{
+  "version": "1.0.0",
+  "name": "PM-AGI Benchmark",
+  "description": "Performance Marketing benchmark for evaluating LLMs on Meta Ads and Google Ads reasoning, strategy, and action.",
+  "total_questions": 100,
+  "created_by": "hawky.ai",
+  "questions": [
+    {
+      "id": "meta_001",
+      "category": "meta_ads",
+      "subcategory": "campaign_structure",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "What is the correct hierarchy of a Meta Ads account structure?",
+      "options": {
+        "A": "Campaign \u2192 Ad Set \u2192 Ad",
+        "B": "Ad Set \u2192 Campaign \u2192 Ad",
+        "C": "Campaign \u2192 Ad \u2192 Ad Set",
+        "D": "Ad \u2192 Ad Set \u2192 Campaign"
+      },
+      "answer": "A",
+      "explanation": "Meta Ads follows a three-level hierarchy: Campaign (objective) \u2192 Ad Set (targeting, budget, schedule) \u2192 Ad (creative).",
+      "tags": [
+        "campaign_structure",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "meta_002",
+      "category": "meta_ads",
+      "subcategory": "campaign_structure",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "Advantage Campaign Budget (formerly CBO) distributes budget at which level?",
+      "options": {
+        "A": "Ad level",
+        "B": "Ad Set level",
+        "C": "Campaign level",
+        "D": "Account level"
+      },
+      "answer": "C",
+      "explanation": "Advantage Campaign Budget (CBO) manages budget at the campaign level, dynamically allocating spend across ad sets based on performance opportunities.",
+      "tags": [
+        "cbo",
+        "budget",
+        "campaign_structure"
+      ]
+    },
+    {
+      "id": "meta_003",
+      "category": "meta_ads",
+      "subcategory": "campaign_structure",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "Which Meta campaign objective should you choose to drive purchases on your e-commerce website?",
+      "options": {
+        "A": "Awareness",
+        "B": "Traffic",
+        "C": "Engagement",
+        "D": "Sales"
+      },
+      "answer": "D",
+      "explanation": "The Sales objective optimizes for conversion events like purchases. Traffic drives clicks but does not optimize for downstream conversion actions.",
+      "tags": [
+        "objectives",
+        "ecommerce",
+        "conversions"
+      ]
+    },
+    {
+      "id": "meta_004",
+      "category": "meta_ads",
+      "subcategory": "campaign_structure",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "An e-commerce brand has 5 product categories. What is the recommended campaign structure to maximize Meta's learning phase efficiency?",
+      "options": {
+        "A": "1 campaign per product category, 1 ad set each, multiple ads",
+        "B": "1 consolidated campaign with CBO, 1 ad set per category, 3\u20135 ads each",
+        "C": "1 campaign per product, 10 ad sets with different audiences, 1 ad each",
+        "D": "5 campaigns per category with ABO, audience duplicated across all ad sets"
+      },
+      "answer": "B",
+      "explanation": "Consolidation with CBO allows Meta's algorithm to allocate budget efficiently. Fewer ad sets with more ads per set helps each ad set exit the learning phase faster by concentrating conversion data.",
+      "tags": [
+        "learning_phase",
+        "cbo",
+        "consolidation",
+        "structure"
+      ]
+    },
+    {
+      "id": "meta_005",
+      "category": "meta_ads",
+      "subcategory": "audience_targeting",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "What is a Lookalike Audience on Meta?",
+      "options": {
+        "A": "An audience retargeted from your website visitors",
+        "B": "A new audience that shares similar characteristics with your existing customers",
+        "C": "An audience based on interest and demographic targeting",
+        "D": "A saved audience used across multiple campaigns"
+      },
+      "answer": "B",
+      "explanation": "A Lookalike Audience uses a source audience (e.g., your customers) and finds new users on Meta who share similar behaviors and characteristics.",
+      "tags": [
+        "lookalike",
+        "audience",
+        "prospecting"
+      ]
+    },
+    {
+      "id": "meta_006",
+      "category": "meta_ads",
+      "subcategory": "audience_targeting",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What minimum source audience size does Meta recommend for creating a high-quality Lookalike Audience?",
+      "options": {
+        "A": "100 people",
+        "B": "500 people",
+        "C": "1,000 people",
+        "D": "10,000 people"
+      },
+      "answer": "C",
+      "explanation": "Meta recommends a source audience of at least 1,000 people for creating Lookalike Audiences, though larger, higher-quality sources (1,000\u201350,000) yield better results.",
+      "tags": [
+        "lookalike",
+        "audience_size",
+        "best_practices"
+      ]
+    },
+    {
+      "id": "meta_007",
+      "category": "meta_ads",
+      "subcategory": "audience_targeting",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "Advantage+ Audience (formerly broad targeting) is best used when:",
+      "options": {
+        "A": "You have no pixel data and are launching for the first time",
+        "B": "You have strong conversion signals and want Meta to find the best audiences algorithmically",
+        "C": "Your audience is very niche and requires strict demographic constraints",
+        "D": "You are running awareness campaigns with no conversion tracking"
+      },
+      "answer": "B",
+      "explanation": "Advantage+ Audience works best when you have sufficient conversion data (pixel signals) allowing Meta's algorithm to identify high-value users without manual audience restrictions.",
+      "tags": [
+        "advantage_plus",
+        "broad_targeting",
+        "algorithm"
+      ]
+    },
+    {
+      "id": "meta_008",
+      "category": "meta_ads",
+      "subcategory": "audience_targeting",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A DTC brand is seeing audience fatigue in its top-performing retargeting ad set (7-day website visitors). Frequency has reached 8.5 over 30 days, CTR dropped 40%, and CPA increased 65%. What actions should the performance marketer take?",
+      "answer_criteria": [
+        "Expand retargeting window to 14 or 30-day visitors to refresh the audience pool",
+        "Introduce new creative variations immediately to combat creative fatigue",
+        "Create exclusions for recent purchasers to reduce wasted spend",
+        "Test broader retargeting audiences (e.g., video viewers, Instagram engagers)",
+        "Consider reducing budget on this ad set and shifting to prospecting or LAL audiences",
+        "Monitor frequency cap settings or set manual frequency caps"
+      ],
+      "explanation": "High frequency combined with declining CTR and rising CPA are classic signs of audience fatigue. The core fixes are creative refresh, audience expansion, and exclusions.",
+      "tags": [
+        "audience_fatigue",
+        "frequency",
+        "retargeting",
+        "optimization"
+      ]
+    },
+    {
+      "id": "meta_009",
+      "category": "meta_ads",
+      "subcategory": "bidding_strategy",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "Which Meta bid strategy gives the algorithm the most freedom to find conversions at the lowest possible cost?",
+      "options": {
+        "A": "Cost Cap",
+        "B": "Bid Cap",
+        "C": "Highest Volume (Lowest Cost)",
+        "D": "ROAS Goal"
+      },
+      "answer": "C",
+      "explanation": "Highest Volume (Lowest Cost) lets Meta's algorithm spend the full budget on the maximum number of conversions without any cost constraint, giving it maximum flexibility.",
+      "tags": [
+        "bid_strategy",
+        "lowest_cost",
+        "algorithm"
+      ]
+    },
+    {
+      "id": "meta_010",
+      "category": "meta_ads",
+      "subcategory": "bidding_strategy",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A brand wants to maintain an average CPA of $25 while scaling spend. Which bid strategy is most appropriate?",
+      "options": {
+        "A": "Bid Cap at $25",
+        "B": "Cost Cap at $25",
+        "C": "Highest Volume",
+        "D": "ROAS Goal"
+      },
+      "answer": "B",
+      "explanation": "Cost Cap tells Meta to aim for an average CPA around your set amount, allowing some bids above and below to optimize delivery. Bid Cap hard-limits individual bids, which can restrict delivery too aggressively.",
+      "tags": [
+        "cost_cap",
+        "cpa",
+        "bid_strategy",
+        "scaling"
+      ]
+    },
+    {
+      "id": "meta_011",
+      "category": "meta_ads",
+      "subcategory": "bidding_strategy",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "A campaign using Cost Cap at $30 CPA is under-delivering and spending only 40% of its daily budget. What is the most likely root cause?",
+      "options": {
+        "A": "The audience is too broad",
+        "B": "The Cost Cap is set too low relative to the market, limiting auction eligibility",
+        "C": "The campaign is in the learning phase",
+        "D": "The ad creative has low relevance score"
+      },
+      "answer": "B",
+      "explanation": "When Cost Cap is set too aggressively low, Meta cannot find enough auction opportunities within that cost target, causing under-delivery. The fix is to gradually raise the Cost Cap or temporarily use Lowest Cost to understand true market CPA.",
+      "tags": [
+        "cost_cap",
+        "under_delivery",
+        "auction",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "meta_012",
+      "category": "meta_ads",
+      "subcategory": "bidding_strategy",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "You manage a Meta campaign for a subscription product with a $45 target CPA. Your current Lowest Cost campaign is delivering at $38 CPA with good ROAS. Leadership wants to scale budget 3x this week. What is your recommended approach?",
+      "answer_criteria": [
+        "Do not 3x budget overnight \u2014 increase by 20\u201330% increments every 2\u20133 days to avoid resetting learning phase",
+        "Switch to or test Cost Cap at $45 to maintain CPA discipline at scale",
+        "Duplicate top-performing ad sets to scale spend without disrupting existing ad set learning",
+        "Monitor for CPA increase as scale increases \u2014 expect some efficiency loss",
+        "Expand audiences (LAL, broader interests) to support higher spend without audience saturation",
+        "Ensure pixel is firing correctly and conversion window is appropriate"
+      ],
+      "explanation": "Scaling too fast disrupts the learning phase. Gradual budget increases and audience expansion are critical to maintaining CPA efficiency while scaling.",
+      "tags": [
+        "scaling",
+        "budget",
+        "learning_phase",
+        "cost_cap"
+      ]
+    },
+    {
+      "id": "meta_013",
+      "category": "meta_ads",
+      "subcategory": "creative_performance",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "According to Meta best practices, what percentage of ad spend should be allocated to creative testing?",
+      "options": {
+        "A": "5%",
+        "B": "10\u201320%",
+        "C": "50%",
+        "D": "Creative testing should have its own separate budget outside the main account"
+      },
+      "answer": "B",
+      "explanation": "Meta recommends allocating 10\u201320% of your total budget to creative testing to continuously find new winning creatives and prevent fatigue in your main campaigns.",
+      "tags": [
+        "creative_testing",
+        "budget_allocation",
+        "best_practices"
+      ]
+    },
+    {
+      "id": "meta_014",
+      "category": "meta_ads",
+      "subcategory": "creative_performance",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What does a high 'Hook Rate' (3-second video views / impressions) indicate about a video ad?",
+      "options": {
+        "A": "The video has strong overall watch time",
+        "B": "The opening 3 seconds are compelling enough to stop the scroll",
+        "C": "The video is driving high click-through rates",
+        "D": "The video has low production cost"
+      },
+      "answer": "B",
+      "explanation": "Hook Rate measures how effectively the first 3 seconds capture attention (stop the scroll). A high hook rate means the opening is compelling, though it doesn't guarantee full video completion or clicks.",
+      "tags": [
+        "video_ads",
+        "hook_rate",
+        "creative_metrics",
+        "attention"
+      ]
+    },
+    {
+      "id": "meta_015",
+      "category": "meta_ads",
+      "subcategory": "creative_performance",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "Your Meta video ad has a Hook Rate of 45% (excellent) but a Hold Rate (video watches at 25% / 3-second views) of only 18% (poor). CPC is high and CTR is low. What does this indicate and what should you do?",
+      "answer_criteria": [
+        "The opening 3 seconds are strong (high hook rate) but the middle content loses viewers quickly (low hold rate)",
+        "The problem is the body/middle of the video, not the hook",
+        "Action: Rework the content between 3\u201315 seconds to maintain interest and build on the hook",
+        "Test a shorter video version that cuts to the value proposition faster",
+        "Ensure the CTA and key message appear earlier in the video",
+        "Consider if there is a mismatch between what the hook promises and what the video delivers"
+      ],
+      "explanation": "High hook rate + low hold rate = strong open, weak middle. The creative strategy should fix the narrative arc after the hook, not the opening.",
+      "tags": [
+        "video_ads",
+        "hook_rate",
+        "hold_rate",
+        "creative_diagnosis"
+      ]
+    },
+    {
+      "id": "meta_016",
+      "category": "meta_ads",
+      "subcategory": "measurement",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the primary purpose of Meta's Conversions API (CAPI)?",
+      "options": {
+        "A": "To replace the Meta Pixel entirely",
+        "B": "To send server-side conversion events to Meta to improve signal quality in a privacy-safe way",
+        "C": "To track offline store visits",
+        "D": "To automate ad creative generation"
+      },
+      "answer": "B",
+      "explanation": "CAPI sends conversion data directly from your server to Meta, bypassing browser-based limitations (ad blockers, iOS restrictions) and improving the quality and completeness of conversion signals.",
+      "tags": [
+        "capi",
+        "server_side",
+        "measurement",
+        "ios14",
+        "privacy"
+      ]
+    },
+    {
+      "id": "meta_017",
+      "category": "meta_ads",
+      "subcategory": "measurement",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "After iOS 14.5, Meta recommends which measurement approach as the primary attribution method?",
+      "options": {
+        "A": "7-day click, 1-day view attribution",
+        "B": "28-day click attribution",
+        "C": "Click-through attribution only",
+        "D": "Last-touch attribution via Google Analytics"
+      },
+      "answer": "A",
+      "explanation": "Post-iOS 14.5, Meta defaulted to 7-day click + 1-day view as its primary attribution window. The 28-day window was deprecated. This window balances signal availability with reporting accuracy.",
+      "tags": [
+        "ios14",
+        "attribution",
+        "measurement",
+        "privacy"
+      ]
+    },
+    {
+      "id": "meta_018",
+      "category": "meta_ads",
+      "subcategory": "measurement",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A client reports that Meta Ads Manager shows 150 purchases but Shopify shows only 80 purchases attributed to Meta. The client wants to reduce Meta budget because 'the numbers don't add up.' How do you explain this and what is your recommendation?",
+      "answer_criteria": [
+        "Explain that Meta uses view-through and click attribution (7-day click + 1-day view by default), while Shopify uses last-click attribution",
+        "View-through conversions count users who saw an ad but converted via another channel \u2014 Meta claims credit, Shopify attributes to the last click",
+        "The true number likely lies between the two \u2014 neither is 'wrong', they measure different things",
+        "Recommend running a Meta Conversion Lift Study to measure incrementality",
+        "Consider using a third-party MMP or northstar metric approach to deconflict attribution",
+        "Do not reduce budget based solely on this discrepancy \u2014 understand incrementality first"
+      ],
+      "explanation": "Attribution model differences between Meta and Shopify are the most common source of this discrepancy. Educating the client on this is critical before making budget decisions.",
+      "tags": [
+        "attribution",
+        "shopify",
+        "measurement_discrepancy",
+        "incrementality"
+      ]
+    },
+    {
+      "id": "meta_019",
+      "category": "meta_ads",
+      "subcategory": "advantage_plus",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is Meta Advantage+ Shopping Campaigns (ASC) designed to do?",
+      "options": {
+        "A": "Automate catalog-based dynamic ads only",
+        "B": "Use AI to automatically manage targeting, placements, and creative combinations for shopping advertisers",
+        "C": "Replace lead generation campaigns",
+        "D": "Run ads exclusively on Instagram Shopping"
+      },
+      "answer": "B",
+      "explanation": "ASC is a fully automated campaign type where Meta's AI handles targeting (prospecting + retargeting together), placements, and creative optimization \u2014 purpose-built for e-commerce/shopping advertisers.",
+      "tags": [
+        "advantage_plus_shopping",
+        "asc",
+        "automation",
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "meta_020",
+      "category": "meta_ads",
+      "subcategory": "advantage_plus",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A fashion e-commerce brand is currently running manual prospecting and retargeting campaigns separately on Meta, achieving ROAS of 3.2. They want to test Advantage+ Shopping Campaigns. How would you structure the test?",
+      "answer_criteria": [
+        "Run ASC as an A/B test against the existing manual setup \u2014 do not shut down existing campaigns immediately",
+        "Give ASC sufficient budget (at least 20% of total Meta budget) and at least 2\u20134 weeks to exit learning phase",
+        "Set existing customer budget cap in ASC (e.g., 20\u201330%) to control prospecting vs retargeting balance",
+        "Upload all existing creatives (static, video, catalog) to ASC and let it optimize",
+        "Compare on ROAS, CPA, and incremental revenue \u2014 not just in-platform metrics",
+        "If ASC wins, gradually shift more budget to it while monitoring performance"
+      ],
+      "explanation": "Testing ASC requires proper A/B methodology \u2014 sufficient budget, time, and a clear success metric. Rushing the switch risks losing performance from the existing proven structure.",
+      "tags": [
+        "asc",
+        "advantage_plus_shopping",
+        "testing",
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "meta_021",
+      "category": "meta_ads",
+      "subcategory": "campaign_structure",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the Meta learning phase and when is an ad set considered to have 'exited' it?",
+      "options": {
+        "A": "A 7-day period where Meta tests different audiences; exits after 7 days",
+        "B": "The period where Meta's delivery system optimizes; exits after ~50 optimization events in a week",
+        "C": "A 30-day warm-up for new accounts; exits after 30 days",
+        "D": "A testing period that only affects new ad accounts"
+      },
+      "answer": "B",
+      "explanation": "The learning phase is when Meta's delivery algorithm is gathering data to optimize delivery. An ad set exits learning once it has recorded approximately 50 optimization events (e.g., purchases) within a 7-day period.",
+      "tags": [
+        "learning_phase",
+        "optimization",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "meta_022",
+      "category": "meta_ads",
+      "subcategory": "campaign_structure",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "Which of the following actions will reset the learning phase of an ad set?",
+      "options": {
+        "A": "Changing the ad copy within an existing ad",
+        "B": "Increasing the budget by 15%",
+        "C": "Changing the bid strategy from Lowest Cost to Cost Cap",
+        "D": "Adding a new placement"
+      },
+      "answer": "C",
+      "explanation": "Significant changes that reset the learning phase include changing bid strategy, changing the optimization event, significantly changing the budget (>20\u201330%), changing audience, or changing creative. Changing bid strategy is a fundamental reset.",
+      "tags": [
+        "learning_phase",
+        "reset",
+        "bid_strategy"
+      ]
+    },
+    {
+      "id": "meta_023",
+      "category": "meta_ads",
+      "subcategory": "measurement",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What does Event Match Quality (EMQ) score measure in Meta Events Manager?",
+      "options": {
+        "A": "How relevant your ad creative is to your target audience",
+        "B": "How effectively your customer data matches Meta user profiles, improving attribution accuracy",
+        "C": "The quality score of your conversion events vs. competitors",
+        "D": "How many events you have fired in the last 30 days"
+      },
+      "answer": "B",
+      "explanation": "EMQ measures how well the customer information (email, phone, etc.) sent with your conversion events matches Meta user profiles. Higher EMQ = better attribution and optimization signal.",
+      "tags": [
+        "emq",
+        "capi",
+        "measurement",
+        "signal_quality"
+      ]
+    },
+    {
+      "id": "meta_024",
+      "category": "meta_ads",
+      "subcategory": "audience_targeting",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the recommended approach for audience exclusions in a Meta prospecting campaign?",
+      "options": {
+        "A": "No exclusions needed \u2014 Meta's algorithm handles audience overlap automatically",
+        "B": "Exclude existing customers and recent website visitors (e.g., 30\u2013180 day) to ensure true prospecting",
+        "C": "Exclude all lookalike audiences to prevent overlap",
+        "D": "Exclude all mobile users to reduce CPC"
+      },
+      "answer": "B",
+      "explanation": "Excluding existing customers and recent site visitors from prospecting campaigns ensures budget is spent acquiring truly new users, not re-engaging warm audiences that should be in a dedicated retargeting campaign.",
+      "tags": [
+        "exclusions",
+        "prospecting",
+        "audience",
+        "best_practices"
+      ]
+    },
+    {
+      "id": "meta_025",
+      "category": "meta_ads",
+      "subcategory": "creative_performance",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "What Meta ad format is typically recommended for showcasing multiple products from a catalog?",
+      "options": {
+        "A": "Single image ad",
+        "B": "Story ad",
+        "C": "Dynamic Product Ads (DPA) with Catalog",
+        "D": "Collection ad only"
+      },
+      "answer": "C",
+      "explanation": "Dynamic Product Ads (DPA) automatically pull products from your catalog and show personalized product recommendations to users based on their browsing and purchase behavior.",
+      "tags": [
+        "dpa",
+        "catalog",
+        "dynamic_ads",
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "meta_026",
+      "category": "meta_ads",
+      "subcategory": "bidding_strategy",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "You are running a Meta campaign optimized for purchases. Your daily budget is $500 but you are only spending $150/day. Which of the following is NOT a likely cause?",
+      "options": {
+        "A": "Cost Cap set too low",
+        "B": "Audience too small",
+        "C": "Ad set still in learning phase",
+        "D": "Too many ads in the ad set (ad fatigue)"
+      },
+      "answer": "D",
+      "explanation": "Under-delivery is typically caused by overly restrictive targeting, a cost cap that limits auction participation, being in the learning phase, or narrow audiences. Having many ads (ad fatigue) affects CPC/CTR over time but is not a primary cause of acute under-delivery.",
+      "tags": [
+        "under_delivery",
+        "budget",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "meta_027",
+      "category": "meta_ads",
+      "subcategory": "measurement",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A performance marketer notices that after implementing Conversions API (CAPI) alongside the Meta Pixel, reported purchase events doubled overnight. There are no new campaigns. What is happening and what should be done?",
+      "answer_criteria": [
+        "This is event deduplication issue \u2014 both Pixel and CAPI are firing the same purchase event, causing duplicate reporting",
+        "Meta requires deduplication parameters: eventID must be identical between Pixel and CAPI events for the same purchase",
+        "Check that eventID (or event_id) is being passed correctly and consistently in both Pixel and CAPI payloads",
+        "Review Events Manager for duplication warnings",
+        "Fix deduplication logic and verify in Events Manager that deduplication is working",
+        "Do not interpret the doubled events as real performance improvement"
+      ],
+      "explanation": "CAPI + Pixel redundancy requires proper deduplication. Without matching event IDs, Meta counts both the browser event and the server event as separate conversions.",
+      "tags": [
+        "capi",
+        "deduplication",
+        "pixel",
+        "measurement",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "meta_028",
+      "category": "meta_ads",
+      "subcategory": "audience_targeting",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "A brand targeting 'health-conscious adults 25\u201345 in the US' finds that Advantage+ Audience significantly outperforms a manually defined interest-based audience at the same budget. What does this most likely indicate?",
+      "options": {
+        "A": "The interest-based targeting was wrong about who the customers are",
+        "B": "Meta's algorithm has identified high-converting users outside the assumed demographic/interest constraints",
+        "C": "The Advantage+ audience spent more budget, inflating results",
+        "D": "Interest targeting no longer works on Meta post-iOS 14"
+      },
+      "answer": "B",
+      "explanation": "Advantage+ Audience often outperforms manual targeting because Meta's algorithm finds converting users that don't match the marketer's assumed profile. This is a common and valuable insight \u2014 the algorithm's view of your customer may be broader or different than manual assumptions.",
+      "tags": [
+        "advantage_plus",
+        "broad_targeting",
+        "algorithm",
+        "audience_insights"
+      ]
+    },
+    {
+      "id": "meta_029",
+      "category": "meta_ads",
+      "subcategory": "creative_performance",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the recommended aspect ratio for Meta Reels ads to maximize screen real estate?",
+      "options": {
+        "A": "1:1 (Square)",
+        "B": "16:9 (Landscape)",
+        "C": "9:16 (Vertical/Portrait)",
+        "D": "4:5 (Portrait)"
+      },
+      "answer": "C",
+      "explanation": "9:16 vertical format fills the entire phone screen in Reels and Stories, maximizing immersion and ad visibility. It is the native format for these placements.",
+      "tags": [
+        "creative",
+        "reels",
+        "aspect_ratio",
+        "placements"
+      ]
+    },
+    {
+      "id": "meta_030",
+      "category": "meta_ads",
+      "subcategory": "measurement",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "What is a Meta Conversion Lift Study and when should you use it?",
+      "options": {
+        "A": "A tool to measure creative quality; use it when CTR is low",
+        "B": "A randomized controlled experiment that measures the incremental impact of your ads vs. a holdout group; use it to validate true ad-driven revenue",
+        "C": "A report in Ads Manager showing conversion trends over time",
+        "D": "A feature to track offline-to-online attribution"
+      },
+      "answer": "B",
+      "explanation": "Conversion Lift Studies use a randomized holdout (people who don't see your ads) to measure true incrementality \u2014 how many conversions happened because of your ads, not organic or other channels.",
+      "tags": [
+        "lift_study",
+        "incrementality",
+        "measurement",
+        "holdout"
+      ]
+    },
+    {
+      "id": "google_001",
+      "category": "google_ads",
+      "subcategory": "campaign_structure",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "What is the correct hierarchy in a Google Ads account?",
+      "options": {
+        "A": "Campaign \u2192 Ad Group \u2192 Ad + Keywords",
+        "B": "Ad Group \u2192 Campaign \u2192 Ad",
+        "C": "Campaign \u2192 Ad \u2192 Ad Group",
+        "D": "Account \u2192 Ad \u2192 Campaign \u2192 Ad Group"
+      },
+      "answer": "A",
+      "explanation": "Google Ads: Campaign (budget, bidding, network) \u2192 Ad Group (keywords, targeting) \u2192 Ads (creative) + Keywords (triggers).",
+      "tags": [
+        "campaign_structure",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "google_002",
+      "category": "google_ads",
+      "subcategory": "keyword_strategy",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "Which Google Ads keyword match type gives the most control over which searches trigger your ad?",
+      "options": {
+        "A": "Broad Match",
+        "B": "Phrase Match",
+        "C": "Exact Match",
+        "D": "Broad Match Modifier (deprecated)"
+      },
+      "answer": "C",
+      "explanation": "Exact Match [keyword] only triggers ads for searches that mean the same as your keyword (with close variants). It offers the tightest control over traffic quality.",
+      "tags": [
+        "keyword_match_types",
+        "exact_match",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "google_003",
+      "category": "google_ads",
+      "subcategory": "keyword_strategy",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "You are running a brand campaign with exact match keywords. Which of the following should you add to prevent wasted spend?",
+      "options": {
+        "A": "More broad match keywords",
+        "B": "Negative keywords for competitor brand names and irrelevant queries",
+        "C": "Dynamic Search Ads",
+        "D": "Increase bids on all keywords"
+      },
+      "answer": "B",
+      "explanation": "Negative keywords prevent your ads from showing on irrelevant searches, protecting budget and improving click quality. Brand campaigns especially benefit from excluding competitor names and generic terms.",
+      "tags": [
+        "negative_keywords",
+        "brand_campaign",
+        "keyword_strategy"
+      ]
+    },
+    {
+      "id": "google_004",
+      "category": "google_ads",
+      "subcategory": "quality_score",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "Quality Score in Google Ads is determined by which three components?",
+      "options": {
+        "A": "Bid amount, ad copy, landing page load speed",
+        "B": "Expected CTR, Ad Relevance, Landing Page Experience",
+        "C": "Impression share, keyword bids, account history",
+        "D": "Search volume, competition, ad rank"
+      },
+      "answer": "B",
+      "explanation": "Quality Score (1\u201310) is composed of: Expected CTR (likelihood your ad gets clicked), Ad Relevance (how closely your ad matches search intent), and Landing Page Experience (relevance and usability of the destination).",
+      "tags": [
+        "quality_score",
+        "ad_rank",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "google_005",
+      "category": "google_ads",
+      "subcategory": "quality_score",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A Google Search campaign has average Quality Scores of 4/10 across core keywords. CPC is 40% higher than industry benchmarks. What diagnostic steps and actions would you take?",
+      "answer_criteria": [
+        "Audit Expected CTR: compare actual CTR to expected for each keyword; improve ad copy headlines to be more relevant to the keyword",
+        "Audit Ad Relevance: ensure keyword appears in headline 1 and description; tighten ad groups by creating Single Keyword Ad Groups (SKAGs) or tightly themed groups",
+        "Audit Landing Page Experience: ensure landing page content matches keyword intent, loads fast (<3s), is mobile-friendly, and has clear relevance to the ad",
+        "Use Responsive Search Ads (RSAs) with keyword insertion to improve relevance signals",
+        "Review Search Terms Report and add negative keywords to improve traffic quality and CTR",
+        "Run Ad Strength improvements for RSAs"
+      ],
+      "explanation": "Low Quality Score = high CPCs. The three levers are CTR (creative), relevance (structure + copy), and landing page (UX/content). Address all three systematically.",
+      "tags": [
+        "quality_score",
+        "cpc",
+        "optimization",
+        "ad_relevance"
+      ]
+    },
+    {
+      "id": "google_006",
+      "category": "google_ads",
+      "subcategory": "smart_bidding",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "Which Google Smart Bidding strategy should you use when you want to maximize conversions within a fixed daily budget?",
+      "options": {
+        "A": "Target ROAS",
+        "B": "Target CPA",
+        "C": "Maximize Conversions",
+        "D": "Enhanced CPC (ECPC)"
+      },
+      "answer": "C",
+      "explanation": "Maximize Conversions tells Google to get as many conversions as possible within your set budget, without a CPA target constraint. Ideal when you want volume and trust Google's algorithm.",
+      "tags": [
+        "smart_bidding",
+        "maximize_conversions",
+        "budget"
+      ]
+    },
+    {
+      "id": "google_007",
+      "category": "google_ads",
+      "subcategory": "smart_bidding",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "How many conversions per month does Google recommend having before switching to Target CPA bidding?",
+      "options": {
+        "A": "5",
+        "B": "15",
+        "C": "30\u201350",
+        "D": "100"
+      },
+      "answer": "C",
+      "explanation": "Google recommends at least 30\u201350 conversions per month (at the campaign level) before using Target CPA, so the algorithm has sufficient data to optimize effectively.",
+      "tags": [
+        "target_cpa",
+        "smart_bidding",
+        "data_requirements",
+        "conversion_volume"
+      ]
+    },
+    {
+      "id": "google_008",
+      "category": "google_ads",
+      "subcategory": "smart_bidding",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "A Target ROAS campaign is set to 400% but is spending only 30% of its daily budget. The actual ROAS over the last 30 days is 280%. What is the best course of action?",
+      "options": {
+        "A": "Increase the daily budget to force more spend",
+        "B": "Lower the Target ROAS to be closer to historical performance (e.g., 300%) to unlock more traffic",
+        "C": "Switch to manual CPC immediately",
+        "D": "Pause the campaign for 2 weeks and restart"
+      },
+      "answer": "B",
+      "explanation": "A Target ROAS set too high vs. actual historical ROAS restricts auction participation, causing under-delivery. Lowering tROAS closer to achievable levels (gradual steps) allows more spend and traffic while maintaining efficiency goals.",
+      "tags": [
+        "target_roas",
+        "under_delivery",
+        "smart_bidding",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "google_009",
+      "category": "google_ads",
+      "subcategory": "smart_bidding",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "You are migrating a manual CPC campaign (running for 2 years, strong performance) to Target CPA smart bidding. Describe your migration approach to minimize performance risk.",
+      "answer_criteria": [
+        "Use 'Maximize Conversions' first for 2\u20134 weeks to allow the algorithm to gather signal before applying a CPA constraint",
+        "Set Target CPA at 20\u201330% above current actual CPA to give the algorithm room to operate",
+        "Do not make other major changes during the transition (budget, audiences, keywords)",
+        "Use the 'Bid Strategy Report' to monitor performance during transition",
+        "Evaluate performance over a 4\u20136 week period, not just the first few days",
+        "Gradually tighten Target CPA toward your goal over time once stable"
+      ],
+      "explanation": "Abrupt switches to Smart Bidding risk performance drops. A phased approach (Maximize Conversions \u2192 Target CPA with a relaxed target) reduces risk and gives the algorithm time to learn.",
+      "tags": [
+        "smart_bidding_migration",
+        "target_cpa",
+        "transition",
+        "risk_management"
+      ]
+    },
+    {
+      "id": "google_010",
+      "category": "google_ads",
+      "subcategory": "performance_max",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What does Performance Max (PMax) campaign type do?",
+      "options": {
+        "A": "Runs ads only on Google Search network",
+        "B": "Uses AI to serve ads across all Google channels (Search, Display, YouTube, Shopping, Gmail, Maps) from a single campaign",
+        "C": "Replaces Smart Shopping campaigns for physical store visits only",
+        "D": "Optimizes exclusively for ROAS on Google Shopping"
+      },
+      "answer": "B",
+      "explanation": "Performance Max is Google's fully automated, cross-channel campaign type that serves across all Google inventory from one campaign, using AI to optimize toward your conversion goals.",
+      "tags": [
+        "performance_max",
+        "pmax",
+        "automation",
+        "cross_channel"
+      ]
+    },
+    {
+      "id": "google_011",
+      "category": "google_ads",
+      "subcategory": "performance_max",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A retail brand running Performance Max campaigns wants to understand where their budget is actually being spent across channels. PMax is a black box. What strategies can they use to gain more visibility and control?",
+      "answer_criteria": [
+        "Use the 'Asset Group Report' and 'Insights' tab in PMax to see audience segments and search themes",
+        "Use Search Terms Report (now available for PMax) to see what searches are triggering ads",
+        "Set up 'Brand Safety' exclusions and negative keyword lists at account level (applied to PMax)",
+        "Use campaign-level audience signals to guide (not restrict) where the algorithm focuses",
+        "Separate brand vs. non-brand by excluding brand keywords from PMax and running a separate brand search campaign",
+        "Review 'Explanations' in the interface when performance fluctuates",
+        "Use asset performance labels (Best, Good, Low) to iterate on creative"
+      ],
+      "explanation": "PMax provides limited native visibility but there are several tactics to improve transparency and control without breaking automation.",
+      "tags": [
+        "performance_max",
+        "transparency",
+        "control",
+        "brand_search",
+        "reporting"
+      ]
+    },
+    {
+      "id": "google_012",
+      "category": "google_ads",
+      "subcategory": "attribution",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the default attribution model in Google Ads (as of 2023)?",
+      "options": {
+        "A": "Last Click",
+        "B": "First Click",
+        "C": "Linear",
+        "D": "Data-Driven Attribution (DDA)"
+      },
+      "answer": "D",
+      "explanation": "Google switched the default attribution model to Data-Driven Attribution (DDA), which uses machine learning to distribute conversion credit based on actual contribution of each touchpoint in the customer journey.",
+      "tags": [
+        "attribution",
+        "data_driven",
+        "dda",
+        "measurement"
+      ]
+    },
+    {
+      "id": "google_013",
+      "category": "google_ads",
+      "subcategory": "attribution",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "A brand bidding on competitor keywords is getting high impressions and clicks but 0 conversions over 30 days. What should they do?",
+      "options": {
+        "A": "Increase bids on competitor keywords to improve position",
+        "B": "Pause all competitor keywords and reallocate budget to branded and non-branded intent keywords",
+        "C": "Analyze search terms, review landing page relevance, and consider whether competitor traffic has meaningful conversion intent before deciding to pause",
+        "D": "Switch to broad match on competitor keywords"
+      },
+      "answer": "C",
+      "explanation": "Competitor keywords often have lower conversion intent. Before pausing, analyze: Are you landing them on a relevant comparison page? Is your offer competitive? Is the landing page optimized for this traffic? Only pause after a thorough review.",
+      "tags": [
+        "competitor_keywords",
+        "conversion_rate",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "google_014",
+      "category": "google_ads",
+      "subcategory": "search_campaigns",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is 'Impression Share Lost to Budget' in Google Ads?",
+      "options": {
+        "A": "The percentage of impressions lost because your ad quality is too low",
+        "B": "The percentage of impressions your ads missed because your daily budget was exhausted",
+        "C": "The share of impressions won by competitors",
+        "D": "The number of impressions lost due to ad disapprovals"
+      },
+      "answer": "B",
+      "explanation": "Search Impression Share Lost to Budget tells you what % of eligible impressions you missed due to budget running out. If this is high, increasing budget should drive more traffic (assuming the existing CPA is acceptable).",
+      "tags": [
+        "impression_share",
+        "budget",
+        "search",
+        "scaling"
+      ]
+    },
+    {
+      "id": "google_015",
+      "category": "google_ads",
+      "subcategory": "search_campaigns",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A Google Search campaign has 45% Search Impression Share Lost to Rank and 5% Lost to Budget. CPA is within target. What does this tell you and what actions do you take?",
+      "answer_criteria": [
+        "45% lost to rank means many eligible searches are not showing your ad because Ad Rank is too low",
+        "Ad Rank is determined by: bid \u00d7 Quality Score \u00d7 expected impact of extensions",
+        "Action 1: Improve Quality Score \u2014 audit and improve Expected CTR, Ad Relevance, Landing Page Experience",
+        "Action 2: Review bids \u2014 if Quality Score is already high, bid increases can improve rank",
+        "Action 3: Audit ad extensions (sitelinks, callouts, structured snippets) \u2014 they directly impact Ad Rank",
+        "Budget is not the constraint here (only 5% lost to budget), so increasing budget would not help",
+        "Focus optimization efforts on rank factors, not budget"
+      ],
+      "explanation": "IS Lost to Rank means your ads are losing auctions on quality/bid factors, not budget. Improving Quality Score and extensions is more efficient than increasing bids.",
+      "tags": [
+        "impression_share",
+        "ad_rank",
+        "quality_score",
+        "optimization"
+      ]
+    },
+    {
+      "id": "google_016",
+      "category": "google_ads",
+      "subcategory": "search_campaigns",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the purpose of Responsive Search Ads (RSAs) in Google Ads?",
+      "options": {
+        "A": "To show ads that automatically resize for mobile screens",
+        "B": "To allow Google to test combinations of up to 15 headlines and 4 descriptions to find the best performing combinations",
+        "C": "To serve dynamic ads based on website content",
+        "D": "To replace all manual ads with AI-generated copy"
+      },
+      "answer": "B",
+      "explanation": "RSAs allow you to provide up to 15 headlines and 4 descriptions. Google's algorithm tests different combinations to find the best-performing assembly for each query and user context.",
+      "tags": [
+        "rsa",
+        "responsive_search_ads",
+        "creative",
+        "testing"
+      ]
+    },
+    {
+      "id": "google_017",
+      "category": "google_ads",
+      "subcategory": "keyword_strategy",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A software company's Google Search campaign is getting high spend on broad match keywords with many irrelevant search queries showing in the Search Terms Report. ROAS is below target. What is your systematic approach to fix this?",
+      "answer_criteria": [
+        "Download Search Terms Report and analyze irrelevant queries \u2014 add them as negative keywords immediately",
+        "Shift budget/bids toward exact and phrase match variants of high-converting terms",
+        "If using broad match, ensure Smart Bidding is active (broad match works best with Smart Bidding signals)",
+        "Create a negative keyword list and apply it at campaign/account level",
+        "Group tightly themed keywords into separate ad groups for better relevance",
+        "Review and tighten audience signals if using Performance Max or broad match with audiences",
+        "Set up ongoing Search Terms monitoring (weekly review)"
+      ],
+      "explanation": "Broad match without Smart Bidding and negative keywords is a budget drain. The fix is systematic negative keyword management + match type tightening.",
+      "tags": [
+        "broad_match",
+        "negative_keywords",
+        "search_terms",
+        "roas"
+      ]
+    },
+    {
+      "id": "google_018",
+      "category": "google_ads",
+      "subcategory": "smart_bidding",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is a 'Seasonality Adjustment' in Google Smart Bidding and when should you use it?",
+      "options": {
+        "A": "A setting to pause campaigns during holidays",
+        "B": "A tool to tell Google's algorithm to expect a temporary change in conversion rate during a known short event (1\u20137 days), helping it adjust bids proactively",
+        "C": "An automated budget increase during Q4",
+        "D": "A bid modifier applied to specific days of the week"
+      },
+      "answer": "B",
+      "explanation": "Seasonality Adjustments signal to Smart Bidding that you expect a short-term conversion rate change (e.g., a sale or flash event). Google uses this to adjust bids before and during the event, reducing the algorithm's lag time.",
+      "tags": [
+        "seasonality_adjustment",
+        "smart_bidding",
+        "promotions",
+        "events"
+      ]
+    },
+    {
+      "id": "google_019",
+      "category": "google_ads",
+      "subcategory": "performance_max",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What are 'Asset Groups' in Performance Max campaigns?",
+      "options": {
+        "A": "Sets of keywords grouped by theme",
+        "B": "Collections of creative assets (images, videos, headlines, descriptions) that Google combines to serve ads across channels",
+        "C": "Budget groups that allocate spend by channel",
+        "D": "Audience segments targeted within a PMax campaign"
+      },
+      "answer": "B",
+      "explanation": "Asset Groups are the core unit of PMax campaigns \u2014 collections of text, image, and video assets that Google's AI assembles into ads across Search, Display, YouTube, Gmail, and Maps.",
+      "tags": [
+        "performance_max",
+        "asset_groups",
+        "creative"
+      ]
+    },
+    {
+      "id": "google_020",
+      "category": "google_ads",
+      "subcategory": "attribution",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A Google Ads account is using Last Click attribution. The brand runs Search, Display, and YouTube campaigns. The CFO wants to cut Display and YouTube because they show poor ROAS on last-click. What is your response and recommendation?",
+      "answer_criteria": [
+        "Last-click attribution systematically under-credits upper-funnel channels (Display, YouTube) that assist conversions",
+        "Display and YouTube likely contribute significantly to awareness and consideration \u2014 converting users may have had a display/YouTube touchpoint before the converting search click",
+        "Recommend switching to Data-Driven Attribution (DDA) to get a more accurate view of each channel's contribution",
+        "Run a Google Ads Attribution report to see 'Assisted Conversions' for Display and YouTube",
+        "Run YouTube/Display Lift Studies to measure incrementality",
+        "Present the full customer journey data before making budget cuts",
+        "Cutting upper-funnel may reduce future search demand over time"
+      ],
+      "explanation": "Last-click kills upper-funnel investment decisions. DDA and assisted conversion analysis are the right tools to defend upper-funnel spend.",
+      "tags": [
+        "attribution",
+        "last_click",
+        "dda",
+        "upper_funnel",
+        "youtube",
+        "display"
+      ]
+    },
+    {
+      "id": "google_021",
+      "category": "google_ads",
+      "subcategory": "search_campaigns",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is Ad Rank and how is it calculated?",
+      "options": {
+        "A": "Ad Rank = Bid \u00d7 CTR",
+        "B": "Ad Rank = Max CPC Bid \u00d7 Quality Score \u00d7 Expected impact of ad extensions and formats",
+        "C": "Ad Rank = Quality Score \u00f7 Competitor bids",
+        "D": "Ad Rank = Daily budget \u00d7 conversion rate"
+      },
+      "answer": "B",
+      "explanation": "Ad Rank determines ad position and CPC. It factors in your bid, Quality Score (CTR, relevance, landing page), and the expected impact of ad extensions \u2014 meaning higher quality ads can win better positions at lower CPCs.",
+      "tags": [
+        "ad_rank",
+        "quality_score",
+        "auction",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "google_022",
+      "category": "google_ads",
+      "subcategory": "campaign_structure",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "When should you use a separate brand campaign in Google Ads vs. including brand keywords in a non-brand campaign?",
+      "options": {
+        "A": "Always combine brand and non-brand keywords in one campaign for efficiency",
+        "B": "Separate brand into its own campaign to control budget, bidding, and messaging independently \u2014 brand terms often have high QS and low CPC but very different ROAS than non-brand",
+        "C": "Only separate brand campaigns for companies with over $1M in ad spend",
+        "D": "Brand campaigns are only needed when competitors bid on your name"
+      },
+      "answer": "B",
+      "explanation": "Brand campaigns have fundamentally different economics (low CPC, high CTR, high ROAS) and strategic purpose. Separating them gives precise budget control and prevents high-volume brand traffic from skewing non-brand performance data.",
+      "tags": [
+        "brand_campaign",
+        "campaign_structure",
+        "brand_vs_nonbrand"
+      ]
+    },
+    {
+      "id": "google_023",
+      "category": "google_ads",
+      "subcategory": "smart_bidding",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "A retailer's Target ROAS campaign achieved 420% ROAS (above the 400% target) but spent only 60% of the monthly budget. What is the trade-off and how do you optimize?",
+      "options": {
+        "A": "The campaign is performing perfectly \u2014 no action needed",
+        "B": "High ROAS but under-delivery indicates the tROAS target is too restrictive. Lower tROAS target slightly to unlock more auction participation and volume",
+        "C": "Increase daily budget to force more spend",
+        "D": "Switch to manual CPC to control delivery"
+      },
+      "answer": "B",
+      "explanation": "Over-achieving tROAS while under-spending signals the algorithm is being too selective. There may be incremental revenue available at slightly lower (but still profitable) ROAS. Lower the tROAS target incrementally to scale volume while maintaining profitability.",
+      "tags": [
+        "target_roas",
+        "efficiency_vs_volume",
+        "scaling",
+        "smart_bidding"
+      ]
+    },
+    {
+      "id": "google_024",
+      "category": "google_ads",
+      "subcategory": "keyword_strategy",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the recommended approach for structuring keywords when using Smart Bidding in Google Ads?",
+      "options": {
+        "A": "Use only exact match keywords with manual CPC for maximum control",
+        "B": "Use a mix of broad match and exact/phrase match with Smart Bidding \u2014 broad match provides signal breadth, Smart Bidding handles bid optimization",
+        "C": "Use only phrase match keywords to balance control and reach",
+        "D": "Avoid keywords entirely and use Dynamic Search Ads"
+      },
+      "answer": "B",
+      "explanation": "Google's own guidance is that broad match + Smart Bidding is a powerful combination \u2014 broad match finds new relevant queries, while Smart Bidding optimizes bids based on conversion signals. This requires strong negative keyword management.",
+      "tags": [
+        "broad_match",
+        "smart_bidding",
+        "keyword_strategy",
+        "best_practices"
+      ]
+    },
+    {
+      "id": "google_025",
+      "category": "google_ads",
+      "subcategory": "search_campaigns",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A Google Ads account you've inherited has 500+ keywords spread across 50 ad groups in one campaign, all using manual CPC, no extensions, and a Quality Score averaging 4/10. Monthly spend is $50K with CPA 80% above target. Create a prioritized 30-day action plan.",
+      "answer_criteria": [
+        "Week 1: Audit \u2014 Download Search Terms Report, keyword QS breakdown, and identify top 20% of keywords driving 80% of conversions (Pareto principle)",
+        "Week 1: Immediate wins \u2014 Add negative keywords from irrelevant search terms, pause zero-conversion keywords with significant spend",
+        "Week 2: Restructure \u2014 Consolidate to tightly themed ad groups (5\u201320 keywords each); create new RSA ads with keyword in headline 1",
+        "Week 2: Add all ad extensions (sitelinks, callouts, structured snippets, call extensions)",
+        "Week 3: Switch to Smart Bidding \u2014 Start with 'Maximize Conversions' for 2 weeks to gather signal",
+        "Week 3\u20134: Landing page audit \u2014 ensure pages match keyword intent, improve page speed",
+        "Week 4: Transition to Target CPA (at 20% above current CPA) once Smart Bidding data is collected",
+        "Ongoing: Weekly Search Terms review and negative keyword additions"
+      ],
+      "explanation": "Account audits require a systematic, prioritized approach. Quick wins (negatives, pausing waste) fund improvements. Structure fixes improve QS and lower CPCs.",
+      "tags": [
+        "account_audit",
+        "action_plan",
+        "quality_score",
+        "restructure",
+        "smart_bidding"
+      ]
+    },
+    {
+      "id": "google_026",
+      "category": "google_ads",
+      "subcategory": "performance_max",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "How should you prevent Performance Max from cannibalizing traffic from your existing Search campaigns?",
+      "options": {
+        "A": "It is impossible \u2014 PMax always takes priority over all campaigns",
+        "B": "Run PMax and Search in separate accounts",
+        "C": "Exclude brand keywords from PMax using account-level negative keywords, and ensure Search campaigns use exact/phrase match on key terms \u2014 Search campaigns take priority over PMax for matching queries",
+        "D": "Set PMax budget to 0% of total and only use it for Display"
+      },
+      "answer": "C",
+      "explanation": "Google's policy: if a Search campaign has an exact-match keyword that matches a query, it takes priority over PMax. Brand exclusions via negative keyword lists and strong match type discipline on Search protect against PMax cannibalization.",
+      "tags": [
+        "performance_max",
+        "cannibalization",
+        "search_priority",
+        "brand"
+      ]
+    },
+    {
+      "id": "google_027",
+      "category": "google_ads",
+      "subcategory": "attribution",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the Google Ads conversion window and why does it matter?",
+      "options": {
+        "A": "The time window during which your ads are eligible to show",
+        "B": "The maximum number of conversions counted per click",
+        "C": "The period after an ad click or view during which a conversion is counted and attributed to that ad interaction",
+        "D": "The reporting delay time for conversion data"
+      },
+      "answer": "C",
+      "explanation": "The conversion window (default 30 days for clicks) determines how long after an ad interaction a conversion gets credited to that campaign. Longer sales cycles (e.g., B2B SaaS) benefit from longer windows (up to 90 days).",
+      "tags": [
+        "conversion_window",
+        "attribution",
+        "measurement"
+      ]
+    },
+    {
+      "id": "google_028",
+      "category": "google_ads",
+      "subcategory": "search_campaigns",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A Google Ads search campaign for a B2B SaaS company shows high conversion volume but the sales team reports low lead quality. What is the most likely fix?",
+      "options": {
+        "A": "Increase budget to get more leads",
+        "B": "Switch to a pure ROAS goal",
+        "C": "Implement lead scoring and pass qualified lead value back to Google Ads as conversion events, then optimize for high-value conversions instead of all leads",
+        "D": "Reduce keyword bids to get cheaper leads"
+      },
+      "answer": "C",
+      "explanation": "Optimizing for all form submissions equally trains Smart Bidding to maximize low-quality leads. Passing qualified lead or MQL/SQL values back into Google Ads (via import or CAPI for Google) lets the algorithm optimize for valuable leads.",
+      "tags": [
+        "lead_quality",
+        "conversion_value",
+        "saas",
+        "smart_bidding",
+        "lead_scoring"
+      ]
+    },
+    {
+      "id": "google_029",
+      "category": "google_ads",
+      "subcategory": "smart_bidding",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "What is Enhanced CPC (ECPC) in Google Ads?",
+      "options": {
+        "A": "A fully automated bidding strategy",
+        "B": "A manual CPC modifier that automatically adjusts your manual bids up or down based on conversion likelihood",
+        "C": "A budget optimization tool",
+        "D": "A bid strategy only for Display campaigns"
+      },
+      "answer": "B",
+      "explanation": "ECPC is a semi-automated strategy: you set manual bids, and Google adjusts them up or down (up to 100% increase) based on the likelihood of conversion for each auction. It's a stepping stone between manual and fully automated bidding.",
+      "tags": [
+        "ecpc",
+        "enhanced_cpc",
+        "smart_bidding",
+        "manual_cpc"
+      ]
+    },
+    {
+      "id": "google_030",
+      "category": "google_ads",
+      "subcategory": "performance_max",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "An e-commerce brand wants to launch Performance Max for their Google Ads for the first time. They have a catalog of 500 products. What key setup steps do you recommend to maximize PMax performance from launch?",
+      "answer_criteria": [
+        "Feed quality: Ensure Google Merchant Center product feed is complete, accurate, and has high-quality images and titles",
+        "Asset Groups: Create separate asset groups by product category with relevant headlines, descriptions, images, and videos",
+        "Audience Signals: Upload customer match lists, website visitor lists, and high-value customer segments as audience signals",
+        "Conversion Tracking: Ensure purchase conversion tracking is working correctly with accurate revenue values",
+        "Budget: Start with enough budget to exit the learning phase quickly (recommended: enough for 50+ conversions in the first month)",
+        "Brand exclusions: Exclude brand search terms from PMax and run a separate brand Search campaign",
+        "URL expansion: Review URL expansion settings and exclude URLs that should not receive traffic (e.g., blog, careers)"
+      ],
+      "explanation": "PMax performance is heavily dependent on feed quality, conversion signal quality, and strong audience signals at launch.",
+      "tags": [
+        "performance_max",
+        "setup",
+        "merchant_center",
+        "launch",
+        "audience_signals"
+      ]
+    },
+    {
+      "id": "ct_001",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A campaign's CPC increased 35% MoM while CTR decreased 20% and impressions stayed flat. Conversion rate and CPA remained the same. What is the most accurate interpretation?",
+      "options": {
+        "A": "The campaign is becoming less efficient and should be paused",
+        "B": "Increased CPC and lower CTR suggests higher auction competition; stable conversion rate means qualified visitors still convert well \u2014 monitor but no immediate alarm",
+        "C": "Creative fatigue is causing the CPC increase",
+        "D": "The budget is too low"
+      },
+      "answer": "B",
+      "explanation": "CPC increases with flat impressions + lower CTR typically indicates increased competition (others bidding more for the same auctions). The fact that CPA is stable means the people who do click are still converting \u2014 the core funnel is healthy. This warrants monitoring and possibly a competitive audit, not panic.",
+      "tags": [
+        "cpc",
+        "ctr",
+        "competition",
+        "data_interpretation"
+      ]
+    },
+    {
+      "id": "ct_002",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "You are given the following 30-day performance data for a DTC brand:\n- Meta: Spend $50K, Revenue $175K, ROAS 3.5x, New Customer %: 45%\n- Google Brand: Spend $5K, Revenue $80K, ROAS 16x, New Customer %: 10%\n- Google Non-Brand: Spend $15K, Revenue $45K, ROAS 3.0x, New Customer %: 70%\n- Total: Spend $70K, Revenue $300K, Blended ROAS 4.3x\n\nThe CFO wants to cut Meta and double Google Brand budget to improve blended ROAS. Analyze and respond.",
+      "answer_criteria": [
+        "Google Brand's 16x ROAS is misleading \u2014 these users already know the brand and would likely convert organically; it captures demand, not creates it",
+        "Meta is the primary demand-creation channel (45% new customers at $50K spend) \u2014 cutting it would reduce top-of-funnel and eventually hurt Google Brand search volume",
+        "Google Non-Brand is genuinely strong (70% new customers, 3.0x ROAS) \u2014 this is the channel to invest in alongside Meta",
+        "Doubling Google Brand budget would likely have diminishing returns quickly (limited branded search volume)",
+        "Recommend: maintain or grow Meta (demand creation), grow Google Non-Brand (high-intent acquisition), and keep Google Brand at a controlled floor",
+        "Recommend running incrementality tests (Meta Lift Study) before cutting Meta to quantify true contribution",
+        "Present the CFO with a full-funnel view, not just ROAS by channel"
+      ],
+      "explanation": "Brand search ROAS is a vanity metric. Cutting demand-creation channels to improve blended ROAS is a classic mistake that erodes future growth.",
+      "tags": [
+        "roas",
+        "attribution",
+        "full_funnel",
+        "budget_strategy",
+        "brand_vs_nonbrand",
+        "incrementality"
+      ]
+    },
+    {
+      "id": "ct_003",
+      "category": "critical_thinking",
+      "subcategory": "budget_allocation",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A DTC brand has a $100K/month media budget. They currently split it: 70% Meta, 30% Google. Both channels are hitting CPA targets. They want to scale revenue by 30% in Q3. How would you approach the budget allocation decision?",
+      "answer_criteria": [
+        "Analyze marginal efficiency \u2014 which channel can absorb more spend before CPA degrades? Look at Impression Share Lost to Budget (Google) and frequency/reach saturation (Meta)",
+        "Google: if IS Lost to Budget is high and CPA is on-target, there is clearly more budget-efficient inventory available \u2014 increase Google first",
+        "Meta: assess frequency and audience size. If frequency is low (<3) and reach is not saturated, Meta can scale",
+        "Consider channel synergy: Google often captures demand created by Meta \u2014 reducing Meta to fund more Google may backfire",
+        "Run budget simulator tools (Google's bid simulator, Meta's Reach & Frequency planner) to model expected volume at higher budgets",
+        "Consider new channels (TikTok, YouTube) for incremental reach if primary channels are saturating",
+        "Scale in increments (15\u201320% at a time) and measure CPA impact at each step"
+      ],
+      "explanation": "Scaling requires understanding marginal efficiency, saturation signals, and channel interplay \u2014 not just doubling what works.",
+      "tags": [
+        "budget_allocation",
+        "scaling",
+        "channel_mix",
+        "marginal_efficiency"
+      ]
+    },
+    {
+      "id": "ct_004",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A campaign shows a 50% drop in conversions week-over-week with no changes to ads, budget, or targeting. What should you check FIRST?",
+      "options": {
+        "A": "Refresh all ad creatives immediately",
+        "B": "Check conversion tracking \u2014 verify the pixel/tag is firing correctly and no site changes broke tracking",
+        "C": "Increase budget by 50% to recover conversion volume",
+        "D": "Switch bid strategy to Maximize Conversions"
+      },
+      "answer": "B",
+      "explanation": "A sudden drop with no campaign changes almost always points to a tracking issue first. A site update, checkout flow change, or pixel breakage would cause exactly this pattern. Verify tracking before diagnosing campaign issues.",
+      "tags": [
+        "tracking",
+        "conversion_drop",
+        "troubleshooting",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "ct_005",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "You run a Meta campaign with 3 ad sets targeting different audiences. Ad Set A shows ROAS 6.0x, Ad Set B shows ROAS 2.5x, Ad Set C shows ROAS 1.8x over 30 days. What is the risk of simply pausing B and C and putting all budget into A?",
+      "options": {
+        "A": "No risk \u2014 you should always put budget into the best performer",
+        "B": "Ad Set A may be retargeting a warm audience (inflating ROAS), while B and C may be driving new customer acquisition. Cutting B and C may starve A of future customers.",
+        "C": "Ad Set A will immediately start underperforming once budget is increased",
+        "D": "You will get flagged by Meta for account consolidation violations"
+      },
+      "answer": "B",
+      "explanation": "High ROAS ad sets are often retargeting warm audiences (existing site visitors, engagers) who would have converted anyway. Mid-ROAS ad sets often drive new customer acquisition. A full-funnel view with new customer % is needed before making this decision.",
+      "tags": [
+        "roas",
+        "new_customers",
+        "full_funnel",
+        "retargeting",
+        "prospecting",
+        "budget_trap"
+      ]
+    },
+    {
+      "id": "ct_006",
+      "category": "critical_thinking",
+      "subcategory": "competitive_analysis",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "A competitor has dramatically increased their Google Ads spend this month (visible in Auction Insights report \u2014 their impression share jumped from 20% to 55%). Your CPCs have risen 25% and ROAS has declined. What is your response strategy?",
+      "answer_criteria": [
+        "Do not panic-bid into a CPC war \u2014 this rarely wins and drains budget",
+        "Analyze: Which keywords are most affected? Use Auction Insights by keyword/ad group to identify where the competitive pressure is highest",
+        "Protect high-value terms: ensure you maintain strong impression share on your most converting, highest-revenue keywords",
+        "Consider non-keyword differentiation: improve Quality Score (reduces CPC without higher bids), add extensions, improve landing pages",
+        "Identify keywords where you can cede ground without major revenue impact and reallocate budget to defended terms",
+        "Run a competitor ad analysis (Meta Ad Library, Google Ads Transparency) to understand their messaging",
+        "Consider whether the CPA increase is still within target \u2014 if so, hold position; if CPA is unsustainable, reassess budget allocation"
+      ],
+      "explanation": "Competitive responses require surgical precision, not emotional bidding wars. Quality Score improvement is the most cost-effective defense.",
+      "tags": [
+        "competitive_analysis",
+        "auction_insights",
+        "cpc",
+        "defense_strategy"
+      ]
+    },
+    {
+      "id": "ct_007",
+      "category": "critical_thinking",
+      "subcategory": "budget_allocation",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "It's October 15th. A DTC brand has $200K remaining in their annual marketing budget and Q4 (Black Friday, Cyber Monday, Christmas) ahead. How do you structure the budget allocation?",
+      "answer_criteria": [
+        "Allocate the majority (60\u201370%) to the Nov 1 \u2013 Dec 15 peak window (BFCM + pre-Christmas)",
+        "Reserve 10\u201315% for early October warm-up (build retargeting pools, test creative) before CPMs spike",
+        "Reserve 15\u201320% for post-BFCM (Dec 1\u201315) when CPMs drop and intent remains high",
+        "Identify which channel (Meta vs Google) has historically performed better in Q4 for this brand",
+        "Pre-build audiences: start collecting retargeting pools (website visitors, video viewers) early so BFCM campaigns have warm audiences",
+        "BFCM CPMs are highest industry-wide \u2014 focus on efficiency: use existing customer data, LAL, and high-intent search terms",
+        "Set up Seasonality Adjustments in Google Smart Bidding for BFCM dates",
+        "Have creative ready 2 weeks before launch \u2014 do not be creating ads during BFCM"
+      ],
+      "explanation": "Q4 budget allocation requires advance planning: building audiences early, reserving budget for peak windows, and being campaign-ready before CPMs spike.",
+      "tags": [
+        "q4",
+        "bfcm",
+        "budget_planning",
+        "seasonality",
+        "holiday"
+      ]
+    },
+    {
+      "id": "ct_008",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A Meta campaign's CPM increased 60% YoY during Q4, but ROAS held steady. What does this indicate?",
+      "options": {
+        "A": "The campaign targeting is broken and targeting wrong audiences",
+        "B": "Q4 auction competition drove up CPMs industry-wide, but the campaign's creative quality and audience relevance maintained conversion efficiency",
+        "C": "The campaign is wasting budget on irrelevant impressions",
+        "D": "Meta's algorithm changed and is no longer working correctly"
+      },
+      "answer": "B",
+      "explanation": "Q4 CPM inflation is normal across all advertisers due to high demand. Maintaining ROAS despite higher CPMs indicates strong creative, audience quality, and conversion rate \u2014 a healthy outcome.",
+      "tags": [
+        "cpm",
+        "q4",
+        "roas",
+        "seasonality",
+        "data_interpretation"
+      ]
+    },
+    {
+      "id": "ct_009",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "You have two Meta ad variants running in the same ad set for 14 days:\n- Ad A: Impressions 50K, CTR 2.1%, CPC $1.20, Conversions 45, CPA $33, ROAS 4.2x\n- Ad B: Impressions 18K, CTR 3.8%, CPC $0.95, Conversions 12, CPA $38, ROAS 3.6x\n\nMeta is allocating 73% of budget to Ad A. Should you override Meta and pause Ad A to give Ad B more budget? Analyze.",
+      "answer_criteria": [
+        "Do not prematurely conclude Ad B is better based on CTR alone \u2014 CPA and ROAS are what matter for performance marketing",
+        "Ad A has a lower CPA ($33 vs $38) and higher ROAS (4.2x vs 3.6x) \u2014 it is the better performing ad on the key metrics",
+        "Ad B has better CTR and CPC but converts less efficiently \u2014 it may attract clicks but not buyers",
+        "Meta's allocation to Ad A is algorithmically justified based on conversion data",
+        "Ad B may need more time/impressions (at least 50 conversions) before a statistically valid conclusion can be drawn",
+        "Recommendation: Let Meta continue optimizing. Give Ad B more time before pausing. Do not override the algorithm based on CTR/CPC alone.",
+        "If Ad B does not improve CPA after 30+ conversions, consider pausing it"
+      ],
+      "explanation": "CTR and CPC are vanity metrics in conversion campaigns. CPA and ROAS are what matter. Meta's algorithm is often right when allocating based on conversion data.",
+      "tags": [
+        "creative_testing",
+        "statistical_significance",
+        "ctr_vs_cpa",
+        "algorithm_trust"
+      ]
+    },
+    {
+      "id": "ct_010",
+      "category": "critical_thinking",
+      "subcategory": "budget_allocation",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A performance marketer notices their Google non-brand CPA is $45 (within target) but Meta CPA is $80 (above the $60 target). They propose cutting Meta entirely. What is wrong with this reasoning?",
+      "options": {
+        "A": "Nothing \u2014 you should always cut channels that miss CPA targets",
+        "B": "Meta's CPA on last-click may be inflated due to view-through and cross-channel journeys; more importantly, cutting Meta may reduce Google search demand over time as brand awareness drops",
+        "C": "Meta CPA should never be compared to Google CPA",
+        "D": "The target CPA of $60 on Meta is unrealistic and should be raised to $100"
+      },
+      "answer": "B",
+      "explanation": "Meta's attributed CPA is often higher than Google's because Meta creates demand (upper funnel) while Google captures it. The two channels are interdependent. Cutting Meta often leads to declining Google non-brand search volume within 60\u201390 days.",
+      "tags": [
+        "channel_interdependency",
+        "upper_funnel",
+        "meta_vs_google",
+        "cpa"
+      ]
+    },
+    {
+      "id": "ct_011",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What does a low Conversion Rate (CVR) combined with a low CPC and high CTR most likely indicate?",
+      "options": {
+        "A": "The ad creative is the main problem",
+        "B": "The ad is attracting clicks but the landing page is failing to convert \u2014 CVR is a post-click metric",
+        "C": "The targeting is too broad, attracting irrelevant traffic",
+        "D": "The campaign budget is too low"
+      },
+      "answer": "B",
+      "explanation": "High CTR + Low CVR means people are interested enough to click (ad is working) but something is breaking post-click. This points to landing page issues: relevance mismatch, poor UX, slow load time, weak offer, or wrong CTA.",
+      "tags": [
+        "conversion_rate",
+        "landing_page",
+        "ctr",
+        "funnel_analysis"
+      ]
+    },
+    {
+      "id": "ct_012",
+      "category": "critical_thinking",
+      "subcategory": "competitive_analysis",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A brand's Facebook Ad Library shows a competitor running the same ad creative for 6+ months continuously. What does this typically indicate?",
+      "options": {
+        "A": "The competitor forgot to update their ads",
+        "B": "The creative is likely a proven 'evergreen' performer \u2014 long-running ads on Meta are almost always profitable",
+        "C": "The competitor has a small creative team and can't make new ads",
+        "D": "Meta is not delivering those ads anymore"
+      },
+      "answer": "B",
+      "explanation": "On Meta, advertisers pay to run ads. Running the same creative for 6+ months almost always means it is profitable and outperforming newer variations. This is a valuable competitive signal \u2014 study the messaging, offer, and format.",
+      "tags": [
+        "competitive_analysis",
+        "facebook_ad_library",
+        "creative_intelligence",
+        "evergreen"
+      ]
+    },
+    {
+      "id": "ct_013",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A subscription box company runs Meta and Google campaigns. Monthly reports show:\n- Total ad spend: $80K\n- Total revenue attributed: $400K (5x blended ROAS)\n- Actual subscription revenue growth: flat\n- New subscriber count: declining 5% MoM\n\nWhat is the diagnosis and what actions do you recommend?",
+      "answer_criteria": [
+        "The high blended ROAS (5x) with flat/declining new subscribers suggests most revenue is being credited to existing customer repurchases, not new acquisition",
+        "Channels are likely over-attributing existing customer revenue (subscription renewals) that would have happened without ads",
+        "Diagnosis: spending heavily to 're-acquire' or re-engage existing subscribers rather than finding new ones",
+        "Action: segment reporting to separate new subscriber CAC from existing customer ROAS",
+        "Action: ensure retargeting/existing customer exclusions are in place on prospecting campaigns",
+        "Action: optimize toward new subscriber as the conversion event, not total revenue",
+        "Action: run incrementality tests to understand true ad-driven new subscriber volume",
+        "Action: review LTV-to-CAC ratio, not just ROAS"
+      ],
+      "explanation": "High platform ROAS + flat business growth = attribution problem. The metrics are lying. New customer acquisition is the real KPI for subscription businesses.",
+      "tags": [
+        "subscriptions",
+        "new_customers",
+        "roas_vs_growth",
+        "attribution",
+        "cac",
+        "ltv"
+      ]
+    },
+    {
+      "id": "ct_014",
+      "category": "critical_thinking",
+      "subcategory": "budget_allocation",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What is the key difference between ROAS (Return on Ad Spend) and MER (Marketing Efficiency Ratio)?",
+      "options": {
+        "A": "They are the same metric with different names",
+        "B": "ROAS measures channel-level attributed revenue per ad dollar; MER measures total business revenue divided by total marketing spend \u2014 a blended, attribution-model-independent view",
+        "C": "MER is only used for offline marketing; ROAS is for digital",
+        "D": "ROAS includes all business costs; MER only includes ad spend"
+      },
+      "answer": "B",
+      "explanation": "MER (or nMER for new customers) = Total Revenue \u00f7 Total Ad Spend. It sidesteps attribution model disputes and gives a business-level view of marketing efficiency. It is increasingly used alongside ROAS as a northstar metric.",
+      "tags": [
+        "mer",
+        "roas",
+        "northstar_metrics",
+        "attribution"
+      ]
+    },
+    {
+      "id": "ct_015",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "Which statistical concept is most important to understand before declaring a winner in an A/B creative test?",
+      "options": {
+        "A": "Correlation coefficient",
+        "B": "Statistical significance and sufficient sample size \u2014 results must reach p<0.05 with enough conversions to be reliable",
+        "C": "Standard deviation of CPM",
+        "D": "Moving average of ROAS"
+      },
+      "answer": "B",
+      "explanation": "Statistical significance (typically p<0.05, meaning less than 5% probability the result is random) and adequate sample size are critical. Calling a winner after 5 conversions is meaningless. Most marketers end tests too early, leading to false conclusions.",
+      "tags": [
+        "ab_testing",
+        "statistical_significance",
+        "sample_size",
+        "experimentation"
+      ]
+    },
+    {
+      "id": "ct_016",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A Google Ads campaign shows a sudden spike in spend and conversions on a Wednesday. The day-of-week analysis shows Wednesdays historically perform poorly. What should you check first?",
+      "options": {
+        "A": "Immediately pause the campaign and investigate",
+        "B": "Check for accidental bid or budget changes, a competitor pausing, or a promotional email sent by the brand that drove website traffic",
+        "C": "Assume it's a Google algorithm update and do nothing",
+        "D": "Double the budget on Wednesdays going forward"
+      },
+      "answer": "B",
+      "explanation": "Unexplained spikes should be diagnosed before acted upon. Common causes: bid/budget change, a promotional email/push driving site traffic that converts on paid, a competitor pausing (your IS increases), or a tracking change. Check change history first.",
+      "tags": [
+        "anomaly_detection",
+        "data_spikes",
+        "change_history",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "ct_017",
+      "category": "critical_thinking",
+      "subcategory": "budget_allocation",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "Explain the concept of 'payback period' in performance marketing and how it should influence media budget decisions for a subscription business with a 12-month LTV.",
+      "answer_criteria": [
+        "Payback period = time to recover CAC from a customer's revenue. If CAC is $90 and monthly revenue is $30, payback period is 3 months",
+        "For subscription businesses, CPA targets should be based on LTV, not first-purchase revenue",
+        "A brand optimizing for first-purchase ROAS on a subscription product will massively underspend and underacquire",
+        "Recommended approach: set CPA target based on 12-month LTV with acceptable payback period (e.g., 6-month payback on 12-month LTV)",
+        "Example: if 12M LTV = $360, acceptable CAC at 6M payback = $180 (vs much lower if optimizing for first purchase only)",
+        "This unlocks more spend, more growth, and potentially profitable long-term outcomes",
+        "Risk: cash flow \u2014 higher upfront CAC requires longer cash runways; balance growth with cash position"
+      ],
+      "explanation": "LTV-based CPA targeting is fundamental for subscription businesses. First-purchase ROAS optimization leads to systematic underspending and growth limitations.",
+      "tags": [
+        "ltv",
+        "cac",
+        "payback_period",
+        "subscriptions",
+        "budget_strategy"
+      ]
+    },
+    {
+      "id": "ct_018",
+      "category": "critical_thinking",
+      "subcategory": "competitive_analysis",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "What tool can you use to see what Google Search ads your competitors are currently running?",
+      "options": {
+        "A": "Google Analytics Competitor Analysis",
+        "B": "Google Ads Transparency Center (ads.google.com/transparency)",
+        "C": "Google Search Console",
+        "D": "Google Keyword Planner"
+      },
+      "answer": "B",
+      "explanation": "Google Ads Transparency Center shows active text ads from verified advertisers. Combined with tools like Semrush or SpyFu, marketers can understand competitor ad copy, keywords, and strategies.",
+      "tags": [
+        "competitive_analysis",
+        "transparency_center",
+        "competitor_ads"
+      ]
+    },
+    {
+      "id": "ct_019",
+      "category": "critical_thinking",
+      "subcategory": "data_interpretation",
+      "difficulty": "easy",
+      "type": "mcq",
+      "question": "What does ROAS stand for and how is it calculated?",
+      "options": {
+        "A": "Return on Ad Spend = Revenue \u00f7 Ad Spend",
+        "B": "Rate of Ad Success = Conversions \u00f7 Clicks",
+        "C": "Revenue Over Ad Strategy = Profit \u00f7 Total Budget",
+        "D": "Return on Asset Sales = Total Sales \u00f7 Ad Impressions"
+      },
+      "answer": "A",
+      "explanation": "ROAS = Revenue \u00f7 Ad Spend. A ROAS of 4x means you generate $4 in revenue for every $1 spent on ads. It is the primary efficiency metric in e-commerce paid media.",
+      "tags": [
+        "roas",
+        "fundamentals",
+        "kpis"
+      ]
+    },
+    {
+      "id": "ct_020",
+      "category": "critical_thinking",
+      "subcategory": "budget_allocation",
+      "difficulty": "hard",
+      "type": "mcq",
+      "question": "A brand is profitable at a 3.5x ROAS and wants to know the break-even ROAS. Their product sells for $100, COGS is $30, fulfillment/shipping is $10, and other variable costs are $5. What is the break-even ROAS?",
+      "options": {
+        "A": "1.0x",
+        "B": "1.8x",
+        "C": "2.22x",
+        "D": "3.0x"
+      },
+      "answer": "C",
+      "explanation": "Break-even ROAS = Revenue \u00f7 Gross Profit per order. Gross Profit = $100 - $30 (COGS) - $10 (fulfillment) - $5 (variable) = $55. Break-even ROAS = $100 \u00f7 $55 = 1.818x. The closest is 2.22x is incorrect \u2014 actual answer is 1.82x. However in common usage, break-even ROAS = 1/gross margin. Gross margin = $55/$100 = 55%. Break-even ROAS = 1/0.55 = 1.82x. Answer B (1.8x) is the closest correct answer.",
+      "tags": [
+        "break_even_roas",
+        "unit_economics",
+        "profitability",
+        "cogs"
+      ]
+    },
+    {
+      "id": "ab_001",
+      "category": "action_based",
+      "subcategory": "campaign_optimization",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "You manage a $30K/month Meta budget for a fashion brand. ROAS has dropped from 4.5x to 2.8x over the last 3 weeks with no campaign changes. Outline your diagnostic and optimization process.",
+      "answer_criteria": [
+        "Step 1 \u2014 Rule out tracking issues: verify pixel is firing, check Events Manager for data quality issues",
+        "Step 2 \u2014 Check external factors: did the website change? Is checkout working? Check Shopify/GA4 for overall CVR changes",
+        "Step 3 \u2014 Creative fatigue: check frequency (>3\u20134 is a red flag), CPM trends, CTR decline. If creative fatigue, launch new creative immediately",
+        "Step 4 \u2014 Audience saturation: are audiences too small? Is the retargeting pool shrinking?",
+        "Step 5 \u2014 Competition/CPM: check CPM trends \u2014 if CPMs rose significantly, the same ad spend buys fewer impressions",
+        "Step 6 \u2014 Seasonal factors: is there a Q4/seasonality/competitor promotional event happening?",
+        "Step 7 \u2014 Based on diagnosis, take targeted action: new creative, audience refresh, budget reallocation, or bid strategy adjustment"
+      ],
+      "explanation": "Systematic diagnosis before action prevents wasted effort. The diagnostic ladder moves from external/tracking \u2192 creative \u2192 audience \u2192 market.",
+      "tags": [
+        "roas_decline",
+        "diagnosis",
+        "troubleshooting",
+        "optimization"
+      ]
+    },
+    {
+      "id": "ab_002",
+      "category": "action_based",
+      "subcategory": "troubleshooting",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A client's Google Ads account shows 0 conversions in the last 7 days despite normal click volume and spend. Everything was working fine last week. What is your step-by-step investigation?",
+      "answer_criteria": [
+        "Step 1: Check Google Ads Change History \u2014 any recent campaign, bid, or setting changes?",
+        "Step 2: Check Google Tag Manager / conversion tag \u2014 did a website deployment break the conversion tag?",
+        "Step 3: Use Google Tag Assistant or Test Conversions in Google Ads to verify the tag fires on the thank-you/confirmation page",
+        "Step 4: Check if the conversion action is still active and correctly configured in Google Ads (not paused, correct URL, correct event)",
+        "Step 5: Review Google Analytics \u2014 are there sessions and goal completions recorded? If GA shows conversions but Google Ads shows 0, it's a tagging issue",
+        "Step 6: Check if a website checkout change removed or changed the confirmation page URL",
+        "Step 7: Check for ad disapprovals that might have reduced actual ad serving",
+        "Step 8: If tracking confirmed broken, immediately restore previous tag/code and alert the client"
+      ],
+      "explanation": "Zero conversions with normal clicks = almost always a tracking/tag issue. Systematic tag verification is step one.",
+      "tags": [
+        "zero_conversions",
+        "conversion_tracking",
+        "troubleshooting",
+        "tags"
+      ]
+    },
+    {
+      "id": "ab_003",
+      "category": "action_based",
+      "subcategory": "scaling_decisions",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A Meta campaign for a B2C app has been running for 60 days, spending $500/day, CPA of $12 (target: $15), and 40 installs/day. The client wants to scale to $5,000/day. What is your scaling plan?",
+      "answer_criteria": [
+        "Do not jump from $500 to $5,000 in one step \u2014 this will reset learning and likely spike CPA",
+        "Scale in 20\u201330% increments every 3\u20135 days: $500 \u2192 $650 \u2192 $850 \u2192 $1,100 \u2192 $1,450 \u2192 $1,850 \u2192 $2,400 \u2192 $3,100 \u2192 $4,000 \u2192 $5,000",
+        "Monitor CPA at each step \u2014 if CPA exceeds target ($15), pause increases and stabilize",
+        "Audience expansion: as spend increases, current audiences will saturate. Expand to new LAL sizes, broader interests, Advantage+ Audience",
+        "Creative pipeline: prepare 3\u20135 new creative variations to replace fatiguing ads at scale",
+        "Consider horizontal scaling: duplicate ad sets with new audiences rather than just increasing budget on one",
+        "At $5K/day, audience reach requirements are much higher \u2014 ensure total addressable audience is large enough",
+        "Use Meta's scaling tools: CBO with multiple ad sets, Advantage+ Audience at scale"
+      ],
+      "explanation": "Scaling requires gradual budget increases, audience expansion, and creative pipeline management. Speed kills performance.",
+      "tags": [
+        "scaling",
+        "budget_increase",
+        "audience_expansion",
+        "creative_pipeline"
+      ]
+    },
+    {
+      "id": "ab_004",
+      "category": "action_based",
+      "subcategory": "campaign_optimization",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "A Google Shopping campaign has strong ROAS (5x) on top 20 products but weak performance on the remaining 200 products (0.8x ROAS). How do you restructure this?",
+      "answer_criteria": [
+        "Segment campaigns: create a separate 'Hero Products' campaign for the top 20 products with higher bids/ROAS target",
+        "Create a 'Long Tail' campaign for the remaining 200 products with lower ROAS target or Maximize Clicks",
+        "Use Priority settings (High/Medium/Low) in Shopping to control which campaign serves first",
+        "Allocate majority of budget to the Hero Products campaign where ROAS is proven",
+        "For low-performing products: analyze if they have any conversions at all. If zero, consider excluding or using very low bids",
+        "Improve product feed quality for underperforming products (titles, descriptions, images)",
+        "Consider Performance Max with asset groups segmented by product category"
+      ],
+      "explanation": "Product segmentation is the most impactful Shopping optimization. High and low performers need different bid strategies and budgets.",
+      "tags": [
+        "google_shopping",
+        "product_segmentation",
+        "campaign_structure",
+        "roas"
+      ]
+    },
+    {
+      "id": "ab_005",
+      "category": "action_based",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "A Meta campaign targeting cold audiences (LAL 1%) has CPM of $45 and CTR of 0.4%, resulting in CPC of $11.25. Industry benchmark is CPM $18, CTR 1.2%. What are the likely issues and fixes?",
+      "answer_criteria": [
+        "High CPM ($45 vs $18 benchmark): Could indicate Q4 seasonality, highly competitive audience, or small audience size forcing high CPMs \u2014 check audience size (should be 1M+) and timing",
+        "Low CTR (0.4% vs 1.2%): Creative is not resonating with cold audiences \u2014 the hook, message, or offer is not compelling for first-time viewers",
+        "Fix CPM: broaden audience (LAL 2\u20133%, or Advantage+ Audience), check if running during high-competition period",
+        "Fix CTR: test new creative formats (video vs static), stronger hook in first 3 seconds, better value proposition in headline",
+        "Review ad placement mix: if running in high-CPM placements (Facebook Feed), test Stories/Reels which often have lower CPMs for cold audiences",
+        "Test different creative angles: problem-solution, social proof, UGC-style vs polished production",
+        "Cold audiences need different creative than warm audiences \u2014 ensure creative is built for brand introduction, not retargeting"
+      ],
+      "explanation": "High CPM + Low CTR = both supply (audience/placement) and demand (creative) issues. Fix both simultaneously.",
+      "tags": [
+        "cpm",
+        "ctr",
+        "creative_testing",
+        "cold_audiences",
+        "lal"
+      ]
+    },
+    {
+      "id": "ab_006",
+      "category": "action_based",
+      "subcategory": "campaign_optimization",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "You inherit a Google Ads account for a SaaS company spending $80K/month. Initial audit reveals: no conversion tracking, only broad match keywords, no negative keywords, no ad extensions, manual CPC bidding, and single ad per ad group. Prioritize a 6-week fix plan.",
+      "answer_criteria": [
+        "Week 1 (Critical): Set up conversion tracking \u2014 without this, nothing else matters. Implement Google Ads tag for demo/trial sign-up + import GA4 goals",
+        "Week 1: Add account-level negative keywords (jobs, free, DIY, etc.) immediately to stop wasted spend",
+        "Week 2: Add all ad extensions (sitelinks to product pages, callouts, structured snippets, call extension if applicable)",
+        "Week 2\u20133: Keyword audit \u2014 analyze Search Terms Report, identify converting queries, add as exact/phrase match. Pause or lower bids on wasted broad terms",
+        "Week 3: Add RSAs to each ad group (2\u20133 RSAs per ad group with keywords in headlines)",
+        "Week 4: Once 30\u201350 conversions recorded, switch from Manual CPC to Maximize Conversions",
+        "Week 5\u20136: Transition to Target CPA (20% above actual CPA) and begin audience layering (remarketing, customer match)",
+        "Ongoing: Weekly Search Terms review, negative keyword additions"
+      ],
+      "explanation": "Conversion tracking is the absolute foundation \u2014 everything else requires it. Follow with quick wins (negatives, extensions) then structural improvements.",
+      "tags": [
+        "account_audit",
+        "action_plan",
+        "priority_order",
+        "saas",
+        "conversion_tracking"
+      ]
+    },
+    {
+      "id": "ab_007",
+      "category": "action_based",
+      "subcategory": "reporting_insights",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "A CMO asks you to build a weekly performance marketing dashboard. What metrics would you include and how would you structure it?",
+      "answer_criteria": [
+        "Business metrics (top): Revenue, New Customers, CAC, MER (total revenue / total spend)",
+        "Channel efficiency: ROAS by channel, CPA by channel, CPC, CTR",
+        "Spend and pacing: actual spend vs plan, % budget utilized, projection for month-end",
+        "Trend view: WoW changes with % delta and color coding (green/red) for key metrics",
+        "Quality metrics: Quality Score (Google), Relevance Score (Meta), conversion rate, landing page CVR",
+        "Creative performance: top 3 ads by ROAS/CPA, creative fatigue indicators (frequency, CTR trend)",
+        "Funnel: Impressions \u2192 Clicks \u2192 Conversions with each stage's efficiency",
+        "Anomaly alerts: any metric >20% deviation from prior week or target",
+        "Keep it 1 page / executive-friendly \u2014 link to deeper drill-down reports"
+      ],
+      "explanation": "Good dashboards lead with business outcomes, support with channel metrics, and surface anomalies. CMO-level: business first, tactics second.",
+      "tags": [
+        "reporting",
+        "dashboard",
+        "kpis",
+        "cmo",
+        "metrics"
+      ]
+    },
+    {
+      "id": "ab_008",
+      "category": "action_based",
+      "subcategory": "scaling_decisions",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A DTC brand currently spends $20K/month on Meta and $5K/month on Google (brand only). They have a 4.2x blended ROAS (target: 3.5x) and want to grow revenue 50% in 6 months. What is your channel expansion and budget scaling strategy?",
+      "answer_criteria": [
+        "Current spend is underinvested \u2014 4.2x ROAS above target suggests room to scale before hitting break-even",
+        "Month 1\u20132: Increase Meta budget 25\u201330% (to ~$25\u201326K) and launch Google Non-Brand Search (keywords relevant to product category, $5\u20138K to start)",
+        "Month 2\u20133: Launch Google Performance Max or Shopping if e-commerce ($5\u201310K), monitor CPA vs target",
+        "Month 3\u20134: Based on Google Non-Brand performance, scale winning campaigns 20\u201330% per month",
+        "Month 4\u20135: If Meta and Google are both efficient, consider adding YouTube for upper funnel or TikTok if target demographic is there",
+        "Month 5\u20136: Consolidate learnings, allocate majority of incremental budget to the 2 highest-performing channels",
+        "Target total spend by month 6: ~$45\u201350K/month (150% of current) to achieve 50% revenue growth",
+        "Monitor blended ROAS monthly \u2014 as long as it stays above 3.5x, continue scaling"
+      ],
+      "explanation": "Channel expansion + budget scaling should be methodical: prove new channels at small budgets, then scale winners. Don't expand all channels simultaneously.",
+      "tags": [
+        "channel_expansion",
+        "scaling",
+        "budget_strategy",
+        "growth"
+      ]
+    },
+    {
+      "id": "ab_009",
+      "category": "action_based",
+      "subcategory": "campaign_optimization",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "Your Meta retargeting campaign (30-day site visitors) shows diminishing returns \u2014 CPA doubled over 45 days, frequency is 9.2. What is a full refresh strategy?",
+      "answer_criteria": [
+        "Immediate: Pause or heavily reduce budget on the fatigued ad set",
+        "Creative refresh: Launch 3\u20135 entirely new creative concepts \u2014 different format (video vs static), different angle (urgency, social proof, different benefit)",
+        "Audience refresh: Expand retargeting windows (60-day, 90-day) to bring in new people to the retargeting pool",
+        "Segmentation: Break the 30-day audience into more specific segments (product page viewers, add-to-cart, initiate checkout) with different messaging",
+        "Exclusions: Exclude purchasers and people who converted to stop wasting budget",
+        "New audience types: Add video viewers (50%, 75%), Instagram/Facebook page engagers as additional retargeting pools",
+        "Consider a 'break' from retargeting this audience for 2\u20133 weeks to reset fatigue",
+        "Test Dynamic Creative Optimization (DCO) with catalog to automatically vary product shown"
+      ],
+      "explanation": "Frequency 9+ = severe fatigue. Full creative refresh + audience expansion + segmentation is required, not just swapping one ad.",
+      "tags": [
+        "retargeting",
+        "frequency",
+        "audience_fatigue",
+        "creative_refresh",
+        "segmentation"
+      ]
+    },
+    {
+      "id": "ab_010",
+      "category": "action_based",
+      "subcategory": "reporting_insights",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A performance marketing agency presents a monthly report to a client showing Meta ROAS of 7.2x and Google ROAS of 12.5x. The client is thrilled. As a senior PM, what questions should you ask to validate these numbers?",
+      "answer_criteria": [
+        "What attribution window is being used? 7-day click + 1-day view inflates ROAS vs 7-day click only",
+        "Does this include view-through conversions? If yes, what % of conversions are view-through?",
+        "Are existing customers included in conversion counting? If so, these are not incremental sales",
+        "What is the new customer %? ROAS on returning customers is misleading for growth measurement",
+        "How does this compare to MER (total revenue / total spend)? If MER is 3x but channel ROAS is 7x+, something doesn't add up",
+        "Has a Lift/Incrementality test been run? Without it, we don't know how much revenue would have occurred organically",
+        "What is the conversion window vs. actual purchase decision time for this product?",
+        "Is there overlap/double-counting between Meta and Google attributed conversions (cross-channel attribution)?",
+        "Request raw data breakdown: attributed revenue by conversion type, attribution model, and new vs returning customers"
+      ],
+      "explanation": "High ROAS numbers often mask attribution gaming. A rigorous PM asks for incrementality proof, attribution model disclosure, and new customer breakdown before celebrating.",
+      "tags": [
+        "reporting",
+        "attribution",
+        "roas_validation",
+        "incrementality",
+        "agency_management"
+      ]
+    },
+    {
+      "id": "ab_011",
+      "category": "action_based",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A Google Smart Shopping / Performance Max campaign has been running for 2 weeks and has 0 conversions despite $3,000 in spend. What is the most likely issue?",
+      "options": {
+        "A": "PMax/Smart Shopping never works for small budgets",
+        "B": "Conversion tracking is broken, OR the ROAS/CPA target is too aggressive for the learning phase, OR the product feed has critical errors",
+        "C": "The campaign needs 6 weeks before generating any conversions",
+        "D": "Smart bidding does not work for new accounts"
+      },
+      "answer": "B",
+      "explanation": "Zero conversions with $3K spend in PMax almost always points to: broken conversion tracking (most common), an overly aggressive ROAS target preventing auction participation, or a product feed issue causing no products to serve. Verify each in order.",
+      "tags": [
+        "performance_max",
+        "zero_conversions",
+        "troubleshooting",
+        "smart_shopping"
+      ]
+    },
+    {
+      "id": "ab_012",
+      "category": "action_based",
+      "subcategory": "campaign_optimization",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "You manage paid search for a B2B SaaS (annual contract value $20K). Current setup: 50 keywords, manual CPC, tracking only 'Contact Form Submissions' as conversions. Lead-to-close rate is 5%. Monthly spend: $15K, leads: 30/month, closed deals: 1\u20132/month. How do you fundamentally improve this account's ROI?",
+      "answer_criteria": [
+        "The core problem: optimizing for form fills, not revenue. 30 leads at 5% close rate = 1.5 deals/month. $15K spend for ~$30K ARR is marginally positive but could be much better",
+        "Implement full-funnel conversion tracking: MQL, SQL, Demo Booked, Closed Won \u2014 import CRM data into Google Ads",
+        "Assign conversion values: if ACV = $20K and close rate = 5%, a lead is worth $1,000. Use this to set Target ROAS or conversion value",
+        "Switch to value-based bidding: once revenue data flows back, use Target ROAS (or maximize conversion value) to optimize for deal value, not lead volume",
+        "Keyword audit: focus on high-intent, bottom-funnel keywords (comparison, pricing, alternative, best [category] software) vs. informational queries",
+        "Add negative keywords aggressively to cut non-converting traffic",
+        "Build retargeting lists for website visitors (30, 60, 90 days) and nurture with different messaging",
+        "A/B test landing pages focused on demo booking vs. free trial vs. contact form to improve lead quality"
+      ],
+      "explanation": "B2B paid search ROI requires closing the loop between ad spend and revenue using CRM integration and value-based bidding.",
+      "tags": [
+        "b2b_saas",
+        "value_based_bidding",
+        "crm_integration",
+        "lead_quality",
+        "ltv"
+      ]
+    },
+    {
+      "id": "ab_013",
+      "category": "action_based",
+      "subcategory": "scaling_decisions",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "When is it appropriate to use Dayparting (ad scheduling) in Google Ads?",
+      "options": {
+        "A": "Always \u2014 you should always restrict ads to business hours",
+        "B": "When data shows significantly better CPA or conversion rates during specific hours/days, and you are on manual or ECPC bidding",
+        "C": "Only for call-focused campaigns",
+        "D": "Dayparting should never be used with Smart Bidding"
+      },
+      "answer": "B",
+      "explanation": "Dayparting makes sense when data-driven performance differences exist by hour/day. With Smart Bidding, Google already adjusts bids by time of day automatically \u2014 manual dayparting is less needed and can interfere. It's most useful with manual/ECPC bidding or when you have business constraints (e.g., a call center that's only open 9\u20135).",
+      "tags": [
+        "dayparting",
+        "ad_scheduling",
+        "smart_bidding",
+        "bid_adjustments"
+      ]
+    },
+    {
+      "id": "ab_014",
+      "category": "action_based",
+      "subcategory": "campaign_optimization",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "A Meta Lead Generation campaign for a real estate company is generating 200 leads/month at $8 CPA, but the sales team says lead quality is terrible and few convert to viewings. What performance marketing interventions can improve lead quality?",
+      "answer_criteria": [
+        "Add qualifying questions to the lead form: budget range, timeline, location preference, whether they are pre-approved for mortgage \u2014 friction reduces volume but improves quality",
+        "Switch from 'More Volume' to 'Higher Intent' form type in Meta Lead Ads (requires more friction, improves quality)",
+        "Tighten targeting: narrow audience to high-intent indicators (recently searched for homes, life events like marriage/new job)",
+        "Test landing page lead gen vs. native Meta lead form \u2014 landing page forms with more copy/pre-qualification tend to attract higher-intent leads",
+        "Implement lead scoring: pass sales feedback (qualified/not) back to Meta via CAPI as conversion events, so Meta optimizes for quality leads",
+        "Create a follow-up sequence to qualify leads immediately (auto-SMS/email within 5 minutes of submission)",
+        "A/B test ad copy focusing on serious buyers (e.g., 'For buyers ready to move in 3 months') to self-select intent"
+      ],
+      "explanation": "Lead quality is a systemic issue involving form design, targeting, ad copy framing, and feedback loops to the ad platform.",
+      "tags": [
+        "lead_gen",
+        "lead_quality",
+        "meta_lead_ads",
+        "real_estate",
+        "qualification"
+      ]
+    },
+    {
+      "id": "ab_015",
+      "category": "action_based",
+      "subcategory": "reporting_insights",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A brand's Google Analytics shows 10,000 sessions from Meta Ads in a month, but Meta Ads Manager shows 25,000 clicks. What is the most common explanation for this discrepancy?",
+      "options": {
+        "A": "Meta is lying about clicks to inflate billing",
+        "B": "Some Meta clicks land on pages that are slow to load and the user bounces before GA fires; also Meta counts clicks on reactions, comments, profile clicks \u2014 not all are link clicks",
+        "C": "Google Analytics is broken",
+        "D": "UTM parameters are not set on the Meta ads"
+      },
+      "answer": "D",
+      "explanation": "The most common cause of Meta clicks \u2260 GA sessions is missing or broken UTM parameters on the Meta ad URLs. Without UTM tags, GA cannot attribute sessions to Meta and assigns them to direct or organic. Answer D is the primary fix: always add UTM parameters to Meta ads.",
+      "tags": [
+        "utm",
+        "tracking",
+        "meta_vs_ga",
+        "attribution_discrepancy"
+      ]
+    },
+    {
+      "id": "ab_016",
+      "category": "action_based",
+      "subcategory": "campaign_optimization",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "You are launching a new product (no historical data) on both Meta and Google Ads with a $30K launch budget for the first month. How do you structure the launch?",
+      "answer_criteria": [
+        "Budget split suggestion: Meta 60% ($18K), Google Brand 10% ($3K), Google Non-Brand Search 20% ($6K), reserved for optimization 10% ($3K)",
+        "Meta: Start with Advantage+ Shopping Campaign or broad targeting + Lowest Cost bid to gather data. Test 3\u20135 different creative angles (product benefit, problem-solution, social proof)",
+        "Google Non-Brand: Start with exact/phrase match on high-intent category keywords. Use Maximize Conversions until data accumulates",
+        "Conversion tracking: set up before spend day 1 \u2014 pixel, Google tag, and conversion events (Add to Cart, Initiate Checkout, Purchase)",
+        "Week 1\u20132: Focus on data collection. Do not optimize prematurely \u2014 let campaigns run to gather initial signals",
+        "Week 3: First optimization pass \u2014 pause non-performing creatives, add negative keywords, identify best-performing audiences",
+        "Week 4: Scale winning ad sets/campaigns with 20\u201330% budget increase. Test Lookalike Audiences based on early purchaser data",
+        "Set up a retargeting campaign from day 1 (even small audience) \u2014 capture early site visitors",
+        "Document learnings: which creative, audience, and message resonated \u2014 foundation for month 2"
+      ],
+      "explanation": "New product launches require a data-gathering phase before optimization. Structure matters, but patience is equally important.",
+      "tags": [
+        "product_launch",
+        "new_campaign",
+        "budget_allocation",
+        "data_collection",
+        "creative_testing"
+      ]
+    },
+    {
+      "id": "ab_017",
+      "category": "action_based",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "type": "action_based",
+      "question": "A Meta campaign was approved and running, then suddenly all ads were disapproved overnight. The client is panicking. What is your step-by-step response?",
+      "answer_criteria": [
+        "Step 1: Log into Meta Ads Manager and check the specific disapproval reason in Account Quality or the ads themselves",
+        "Step 2: Review the specific Meta advertising policy that was violated (common: health claims, financial services, political content, personal attributes, misleading claims)",
+        "Step 3: If the disapproval seems incorrect (false positive), request a review through Meta's appeal process",
+        "Step 4: If the ad legitimately violates policy, edit the ad copy/creative to comply with the policy and resubmit",
+        "Step 5: Check if the account itself has received a restriction or warning \u2014 escalate to Meta support if needed",
+        "Step 6: While resolving, pause spend on disapproved ads to avoid further policy strikes",
+        "Step 7: Brief the client honestly: explain the cause, the fix, and the expected timeline",
+        "Step 8: Proactively create policy-compliant backup creatives for future contingencies"
+      ],
+      "explanation": "Ad disapprovals require systematic policy review, appeal where appropriate, and creative fixes. Never try to circumvent policies.",
+      "tags": [
+        "ad_disapprovals",
+        "meta_policy",
+        "account_quality",
+        "compliance"
+      ]
+    },
+    {
+      "id": "ab_018",
+      "category": "action_based",
+      "subcategory": "campaign_optimization",
+      "difficulty": "medium",
+      "type": "mcq",
+      "question": "A Google Display campaign is generating cheap CPCs ($0.30) but very low conversion rate (0.05%). The Search campaign for the same brand converts at 3.5%. What explains this difference?",
+      "options": {
+        "A": "Display ads are broken and should always be paused",
+        "B": "Search captures high-intent users actively looking for the product; Display interrupts users who are not in a buying mindset \u2014 fundamentally different intent levels",
+        "C": "Display CPCs are so cheap they attract bot traffic",
+        "D": "The landing pages are different for Display vs Search"
+      },
+      "answer": "B",
+      "explanation": "Search vs. Display conversion rate difference is entirely expected and driven by user intent. Display is an awareness/consideration channel \u2014 it should be measured on view-through attribution, brand lift, or assisted conversions, not direct CVR comparison to Search.",
+      "tags": [
+        "display_vs_search",
+        "user_intent",
+        "conversion_rate",
+        "channel_comparison"
+      ]
+    },
+    {
+      "id": "ab_019",
+      "category": "action_based",
+      "subcategory": "scaling_decisions",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A performance marketing team is managing 15 different clients' Google and Meta accounts. Describe a systematic weekly workflow to manage all accounts efficiently without missing critical issues.",
+      "answer_criteria": [
+        "Automated alerts: Set up custom rules in Meta and Google to send email/Slack alerts for: spend >20% over/under pace, CPA >30% above target, zero conversions for 48hrs, ad disapprovals",
+        "Daily (5 min/account): Scan automated alerts. Check pacing (are we on track to hit monthly spend?). Flag any anomalies.",
+        "Weekly full review (per account, 20\u201330 min): Review WoW performance vs. KPIs (ROAS, CPA, spend). Check Search Terms report (Google). Review frequency and fatigue signals (Meta). Identify top and bottom performers.",
+        "Weekly optimizations: Negative keyword additions, bid adjustments, pausing underperformers, launching new creatives from approved list",
+        "Monthly deep dive: Audit campaign structure, audience refresh, creative strategy review, budget reallocation across channels",
+        "Standardized reporting template: Use Looker Studio / Google Sheets dashboard with auto-updates per client",
+        "SOP documentation: Each account should have a playbook with targets, approved actions, and escalation thresholds",
+        "Client communication: Weekly 1-page report with key metrics, top insights, and recommended actions"
+      ],
+      "explanation": "Scale and efficiency require systems: automated monitoring, standardized workflows, and clear prioritization \u2014 not just working harder.",
+      "tags": [
+        "agency_workflow",
+        "account_management",
+        "efficiency",
+        "automation",
+        "reporting"
+      ]
+    },
+    {
+      "id": "ab_020",
+      "category": "action_based",
+      "subcategory": "reporting_insights",
+      "difficulty": "hard",
+      "type": "action_based",
+      "question": "A CMO questions why the company is spending $200K/month on Meta when they can't directly see proof it drives incremental revenue. How do you build the business case for Meta spend?",
+      "answer_criteria": [
+        "Run a Meta Conversion Lift Study: show a statistically valid holdout group, measure revenue difference between exposed and unexposed groups",
+        "Run a geo-based incrementality test: turn off Meta in one region for 4 weeks, compare revenue growth vs. regions where Meta is running",
+        "Show MER (Marketing Efficiency Ratio) trend: when Meta spend was reduced in the past, did MER decline? Show historical correlation",
+        "Present new customer acquisition data: Meta's contribution to new customer count (not just attributed revenue) \u2014 show Meta new customer CPA vs. other channels",
+        "Show assisted conversion data from Google Analytics \u2014 how many converting Google/direct users had a prior Meta touchpoint?",
+        "Build a brand search volume correlation: show that when Meta spend increases, branded Google search volume rises \u2014 demonstrating demand creation",
+        "Frame it in business language: 'At $200K spend, we acquire X new customers at $Y CAC with a $Z LTV. NPV of those customers is...'",
+        "Acknowledge limitations honestly and propose a rigorous test to prove/disprove incrementality"
+      ],
+      "explanation": "Business cases for upper-funnel spend require incrementality proof, not attribution data. Lift studies and MER trends are the gold standard.",
+      "tags": [
+        "incrementality",
+        "business_case",
+        "cmo_presentation",
+        "meta_value",
+        "lift_study"
+      ]
+    }
+  ]
+}

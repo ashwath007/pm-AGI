@@ -1,0 +1,11 @@
+# Core evaluation dependencies
+openai>=1.30.0
+anthropic>=0.28.0
+
+# Leaderboard (Hugging Face Space)
+gradio>=4.36.0
+pandas>=2.0.0
+
+# Utilities
+tqdm>=4.66.0
+python-dotenv>=1.0.0
